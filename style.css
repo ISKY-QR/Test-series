@@ -1,0 +1,71 @@
+:root {
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --bg:#f9fafb;
+  --card:#ffffff;
+}
+body {
+  margin:0; background:var(--bg); color:#111; font-family:system-ui, sans-serif;
+}
+.container {
+  max-width:600px; margin:auto; padding:15px;
+}
+header h1 {
+  text-align:center; font-size:20px; margin-bottom:15px;
+}
+.card {
+  background:var(--card); padding:15px; border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+h2 { margin-top:0; }
+.muted { color:var(--muted); font-size:14px; }
+
+input {
+  width:100%; padding:10px; margin-top:5px;
+  border:1px solid #ddd; border-radius:6px;
+}
+.form-grid { display:grid; gap:12px; margin:15px 0; }
+.form-actions { display:flex; gap:10px; flex-wrap:wrap; }
+
+button {
+  cursor:pointer; border:none; border-radius:6px; padding:10px 14px; font-size:14px;
+}
+.btn-primary { background:var(--accent); color:#fff; flex:1; }
+.btn-ghost { background:#f3f4f6; color:#111; flex:1; }
+
+.meta {
+  display:flex; justify-content:space-between; margin-bottom:10px;
+}
+.timer { font-size:18px; font-weight:bold; color:var(--accent); }
+
+.progress { height:8px; background:#e5e7eb; border-radius:6px; margin:8px 0; }
+.progress i { display:block; height:100%; background:var(--accent); width:0%; }
+
+.q-box { padding:12px; border:1px solid #ddd; border-radius:8px; margin:10px 0; }
+.option { padding:10px; border:1px solid #ddd; border-radius:6px; margin-top:8px; cursor:pointer; }
+.option.selected { background:#dbeafe; border-color:var(--accent); }
+
+.navs { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+.navs button { flex:1; }
+
+.q-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(40px,1fr)); gap:6px; margin-top:12px; }
+.q-grid button { padding:8px; border:1px solid #ddd; border-radius:6px; background:#f9fafb; }
+
+.result-summary {
+  display:flex; justify-content:space-around; margin:15px 0; font-size:16px;
+}
+.score-actions { display:flex; flex-wrap:wrap; gap:8px; margin:15px 0; }
+.result-table { width:100%; border-collapse:collapse; margin-top:10px; }
+.result-table th, .result-table td {
+  border:1px solid #e5e7eb; padding:8px; font-size:14px;
+}
+.correct { color:green; font-weight:bold; }
+.wrong { color:red; font-weight:bold; }
+
+.attempts-list { margin-top:10px; }
+.attempts-list > div { padding:8px; border-bottom:1px solid #eee; font-size:14px; }
+
+@media (max-width:480px) {
+  .result-summary { flex-direction:column; gap:8px; }
+  .score-actions button { flex:1; }
+}
