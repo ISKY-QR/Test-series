@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "What is the capital of India?",
+      "question_hi": "भारत की राजधानी क्या है?",
+      "options_en": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+      "options_hi": ["दिल्ली", "मुंबई", "कोलकाता", "चेन्नई"],
+      "answer": 0
+    },
+    {
+      "id": 2,
+      "question_en": "2 + 2 = ?",
+      "question_hi": "२ + २ = ?",
+      "options_en": ["3", "4", "5", "6"],
+      "options_hi": ["३", "४", "५", "६"],
+      "answer": 1
+    }
+  ]
+}

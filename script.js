@@ -1,148 +1,166 @@
-const QUESTIONS = [
-  {id:1,q:"Smallest prime number?",opts:["0","1","2","3"],ans:2},
-  {id:2,q:"Chemical symbol 'O'?",opts:["Gold","Oxygen","Iron","Silver"],ans:1},
-  {id:3,q:"12 x 8?",opts:["96","108","86","88"],ans:0},
-  {id:4,q:"Red Planet?",opts:["Venus","Saturn","Mars","Jupiter"],ans:2},
-  {id:5,q:"Author of Romeo & Juliet?",opts:["Dickens","Shakespeare","Twain","Tolstoy"],ans:1},
-  {id:6,q:"H2O is?",opts:["Salt","Water","Ammonia","Hydrogen"],ans:1},
-  {id:7,q:"Language for web pages?",opts:["Python","JavaScript","C++","Swift"],ans:1},
-  {id:8,q:"Capital of India?",opts:["Mumbai","New Delhi","Kolkata","Chennai"],ans:1},
-  {id:9,q:"Device AC→DC?",opts:["Transformer","Rectifier","Oscillator","Amplifier"],ans:1},
-  {id:10,q:"CPU stands for?",opts:["Central Processing Unit","Computer Personal Unit","Central Performance Unit","Control Processing Unit"],ans:0}
-];
+let student = {};
+let questions = [];
+let answers = {};
+let currentIndex = 0;
+let timer;
+let timeLeft = 600; // 10 mins for 10 questions
+let language = "en"; // default language
 
-const TOTAL_MINUTES=10, STORAGE_KEY="omr_attempts_v2";
-let state={student:null,answers:{},current:0,endsAt:null,timer:null};
+// Language toggle (always visible)
+document.getElementById("langToggle").addEventListener("click", () => {
+  language = language === "en" ? "hi" : "en";
+  document.getElementById("langToggle").innerText =
+    "Switch to " + (language === "en" ? "Hindi" : "English");
+  renderCurrentScreen();
+});
 
-// DOM refs
-const startScreen=document.getElementById("startScreen"),
- quizScreen=document.getElementById("quizScreen"),
- scoreScreen=document.getElementById("scoreScreen"),
- startBtn=document.getElementById("startBtn"),
- nameInput=document.getElementById("studentName"),
- dobInput=document.getElementById("studentDob"),
- studentBadge=document.getElementById("studentBadge"),
- dobBadge=document.getElementById("dobBadge"),
- timerEl=document.getElementById("timer"),
- qCount=document.getElementById("qCount"),
- progBar=document.getElementById("progBar"),
- qBox=document.getElementById("questionBox"),
- prevBtn=document.getElementById("prevBtn"),
- nextBtn=document.getElementById("nextBtn"),
- submitBtn=document.getElementById("submitBtn"),
- qNav=document.getElementById("qNav"),
- marksText=document.getElementById("marksText"),
- correctCount=document.getElementById("correctCount"),
- incorrectCount=document.getElementById("incorrectCount"),
- resultTable=document.getElementById("resultTable"),
- resultBody=resultTable.querySelector("tbody"),
- toggleDetailsBtn=document.getElementById("toggleDetailsBtn"),
- backBtn=document.getElementById("backToStartBtn"),
- downloadBtn=document.getElementById("downloadJsonBtn"),
- attemptsList=document.getElementById("attemptsList"),
- historyBtn=document.getElementById("viewHistoryBtn");
+// Detect coaching center
+const urlParams = new URLSearchParams(window.location.search);
+let coachingCenter = urlParams.get("center");
 
-function fmt(sec){let m=Math.floor(sec/60),s=sec%60;return `${m}:${s.toString().padStart(2,"0")}`;}
-
-function renderQ(){
- let q=QUESTIONS[state.current];
- qCount.textContent=`Q ${state.current+1}/${QUESTIONS.length}`;
- qBox.innerHTML=`<div><b>${q.q}</b></div>`;
- q.opts.forEach((o,i)=>{
-   let d=document.createElement("div");
-   d.className="option"+(state.answers[q.id]==i?" selected":"");
-   d.textContent=o;
-   d.onclick=()=>{state.answers[q.id]=i;renderQ();renderNav();};
-   qBox.appendChild(d);
- });
- prevBtn.disabled=state.current===0;
- nextBtn.disabled=state.current===QUESTIONS.length-1;
- progBar.style.width=`${Object.keys(state.answers).length/QUESTIONS.length*100}%`;
+if (!coachingCenter) {
+  const pathParts = window.location.pathname.split("/").filter(Boolean);
+  coachingCenter = pathParts[pathParts.length - 1];
 }
 
-function renderNav(){
- qNav.innerHTML="";
- QUESTIONS.forEach((q,i)=>{
-   let b=document.createElement("button");b.textContent=i+1;
-   if(state.answers[q.id]!=null){b.style.background="#2563eb";b.style.color="#fff";}
-   b.onclick=()=>{state.current=i;renderQ();};qNav.appendChild(b);
- });
+if (!coachingCenter || coachingCenter.endsWith(".html")) {
+  coachingCenter = "success-coaching-center"; // default fallback
 }
 
-function startTimer(){
- clearInterval(state.timer);
- state.timer=setInterval(()=>{
-   let remain=Math.max(0,Math.floor((state.endsAt-Date.now())/1000));
-   timerEl.textContent=fmt(remain);
-   if(remain<=0){clearInterval(state.timer);submit();}
- },1000);
+// Fetch questions
+fetch(`questions/${coachingCenter}.json`)
+  .then(res => res.json())
+  .then(data => {
+    questions = data.questions;
+    renderStartPage();
+  })
+  .catch(() => {
+    document.getElementById("app").innerHTML = `
+      <div class="card">
+        <h2>⚠️ Invalid Coaching Center</h2>
+        <p>No question file found for "${coachingCenter}".</p>
+      </div>`;
+  });
+
+// ---------- Screens ----------
+let currentScreen = "start"; // track what to render
+
+function renderCurrentScreen() {
+  if (currentScreen === "start") renderStartPage();
+  else if (currentScreen === "quiz") renderQuestion();
+  else if (currentScreen === "result") submitTest();
+  else if (currentScreen === "details") viewDetailedResult();
 }
 
-startBtn.onclick=()=>{
- if(!nameInput.value||!dobInput.value) return alert("Fill name and DOB");
- state.student={name:nameInput.value,dob:dobInput.value};
- state.answers={};state.current=0;
- state.endsAt=Date.now()+TOTAL_MINUTES*60000;
- studentBadge.textContent="Student: "+state.student.name;
- dobBadge.textContent="DOB: "+state.student.dob;
- startScreen.style.display="none";quizScreen.style.display="block";
- renderQ();renderNav();startTimer();
-};
-
-prevBtn.onclick=()=>{if(state.current>0){state.current--;renderQ();}};
-nextBtn.onclick=()=>{if(state.current<QUESTIONS.length-1){state.current++;renderQ();}};
-submitBtn.onclick=()=>{if(confirm("Submit test?"))submit();};
-
-function submit(){
- clearInterval(state.timer);
- let details=QUESTIONS.map(q=>{
-   let sel=state.answers[q.id],ok=sel===q.ans;
-   return {q:q.q,opts:q.opts,sel,correct:q.ans,mark:ok?1:0};
- });
- let total=details.reduce((a,b)=>a+b.mark,0);
- let attempt={student:state.student,details,total,submitted:Date.now()};
- let arr=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");arr.unshift(attempt);
- localStorage.setItem(STORAGE_KEY,JSON.stringify(arr));
- showResult(attempt);
+function renderStartPage() {
+  currentScreen = "start";
+  document.getElementById("app").innerHTML = `
+    <div class="card">
+      <h2>Student Details</h2>
+      <input type="text" id="name" placeholder="Enter your name">
+      <input type="date" id="dob">
+      <button onclick="startTest()">Start Test</button>
+    </div>`;
 }
 
-function showResult(at){
- quizScreen.style.display="none";scoreScreen.style.display="block";
- let correct=at.details.filter(d=>d.mark).length;
- let incorrect=at.details.length-correct;
- marksText.textContent=`${at.total}/${QUESTIONS.length}`;
- correctCount.textContent=correct; incorrectCount.textContent=incorrect;
- resultBody.innerHTML="";
- at.details.forEach((d,i)=>{
-   let tr=document.createElement("tr");
-   tr.innerHTML=`<td>${i+1}</td><td>${d.q}</td>
-     <td>${d.sel!=null?d.opts[d.sel]:"-"}</td>
-     <td>${d.opts[d.correct]}</td>
-     <td>${d.mark?'<span class="correct">1</span>':'<span class="wrong">0</span>'}</td>`;
-   resultBody.appendChild(tr);
- });
- renderAttempts();
+function startTest() {
+  student.name = document.getElementById("name").value;
+  student.dob = document.getElementById("dob").value;
+  if (!student.name || !student.dob) return alert("Please fill all details");
+
+  startTimer();
+  currentScreen = "quiz";
+  renderQuestion();
 }
 
-toggleDetailsBtn.onclick=()=>{
- resultTable.style.display=resultTable.style.display==="none"?"table":"none";
- toggleDetailsBtn.textContent=resultTable.style.display==="none"?"View Detailed Results":"Hide Details";
-};
-backBtn.onclick=()=>{scoreScreen.style.display="none";startScreen.style.display="block";};
-downloadBtn.onclick=()=>{
- let arr=localStorage.getItem(STORAGE_KEY);if(!arr)return;
- let blob=new Blob([arr],{type:"application/json"});
- let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="results.json";a.click();
-};
-
-function renderAttempts(){
- attemptsList.innerHTML="";
- let arr=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
- if(arr.length===0){attemptsList.textContent="No attempts yet";return;}
- arr.forEach(at=>{
-   let d=document.createElement("div");
-   d.innerHTML=`${at.student.name} - ${at.total}/${QUESTIONS.length} (${new Date(at.submitted).toLocaleString()})`;
-   attemptsList.appendChild(d);
- });
+function startTimer() {
+  timer = setInterval(() => {
+    timeLeft--;
+    if (timeLeft <= 0) { clearInterval(timer); submitTest(); }
+    renderTimer();
+  }, 1000);
 }
-historyBtn.onclick=()=>{startScreen.style.display="none";scoreScreen.style.display="block";renderAttempts();};
+
+function renderTimer() {
+  let min = Math.floor(timeLeft / 60);
+  let sec = timeLeft % 60;
+  document.querySelector(".timer").innerText = `⏳ Time Left: ${min}:${sec < 10 ? "0" : ""}${sec}`;
+}
+
+function renderQuestion() {
+  currentScreen = "quiz";
+  const q = questions[currentIndex];
+  document.getElementById("app").innerHTML = `
+    <div class="timer">Loading...</div>
+    <div class="card">
+      <div class="question">Q${currentIndex+1}. ${q["question_"+language]}</div>
+      <div class="options">
+        ${q["options_"+language].map((opt, i) => `
+          <label>
+            <input type="radio" name="q${q.id}" value="${i}" ${answers[q.id]==i?"checked":""}
+              onchange="answers[${q.id}] = ${i}">
+            <span>${opt}</span>
+          </label>`).join("")}
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:10px;">
+        <button onclick="prevQ()" ${currentIndex===0?"disabled":""}>Prev</button>
+        <button onclick="nextQ()" ${currentIndex===questions.length-1?"disabled":""}>Next</button>
+      </div>
+      <button style="margin-top:15px;" onclick="submitTest()">Submit Test</button>
+    </div>`;
+  renderTimer();
+}
+
+function prevQ(){ if(currentIndex>0){ currentIndex--; renderQuestion(); }}
+function nextQ(){ if(currentIndex<questions.length-1){ currentIndex++; renderQuestion(); }}
+
+function submitTest() {
+  currentScreen = "result";
+  clearInterval(timer);
+  let correct = 0, incorrect = 0;
+  questions.forEach(q => {
+    if (answers[q.id] == q.answer) correct++;
+    else incorrect++;
+  });
+
+  document.getElementById("app").innerHTML = `
+    <div class="card">
+      <h2>Result</h2>
+      <div class="result-summary">
+        <p><b>Name:</b> ${student.name}</p>
+        <p><b>DOB:</b> ${student.dob}</p>
+        <p class="correct">✅ Correct: ${correct}</p>
+        <p class="incorrect">❌ Incorrect: ${incorrect}</p>
+        <p><b>Score:</b> ${correct}/${questions.length}</p>
+      </div>
+      <button onclick="viewDetailedResult()">View Detailed Result</button>
+      <button onclick="downloadResult(${correct}, ${incorrect})">Download Result</button>
+    </div>`;
+}
+
+function viewDetailedResult() {
+  currentScreen = "details";
+  let details = questions.map(q => `
+    <div class="card">
+      <div class="question">Q${q.id}. ${q["question_"+language]}</div>
+      <p><b>Your Answer:</b> ${answers[q.id]!==undefined?q["options_"+language][answers[q.id]]:"Not Attempted"}</p>
+      <p><b>Correct Answer:</b> ${q["options_"+language][q.answer]}</p>
+    </div>`).join("");
+
+  document.getElementById("app").innerHTML = `
+    <div class="timer">Test Finished</div>
+    ${details}
+    <button onclick="submitTest()">Back to Summary</button>`;
+}
+
+function downloadResult(correct, incorrect) {
+  let text = `Name: ${student.name}\nDOB: ${student.dob}\nCorrect: ${correct}\nIncorrect: ${incorrect}\nScore: ${correct}/${questions.length}\n\nDetailed Result:\n\n`;
+  questions.forEach(q=>{
+    text += `Q${q.id}. ${q["question_"+language]}\nYour: ${answers[q.id]!==undefined?q["options_"+language][answers[q.id]]:"Not Attempted"}\nCorrect: ${q["options_"+language][q.answer]}\n\n`;
+  });
+  let blob = new Blob([text], {type:"text/plain"});
+  let a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${student.name.replace(/\s+/g,"_")}_result.txt`;
+  a.click();
+}

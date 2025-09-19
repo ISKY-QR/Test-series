@@ -1,91 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Isky Coaching center - Test Series</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Coaching Test</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Isky Test Series</h1>
-    </header>
+  <header class="app-header">
+    <h1 class="app-title">Offline Coaching Test</h1>
+    <button id="langToggle" class="lang-btn">Switch to Hindi</button>
+  </header>
 
-    <!-- Start screen -->
-    <section id="startScreen" class="card">
-      <h2>Start Test</h2>
-      <p class="muted">Enter your details below to begin. Data is saved locally.</p>
-
-      <div class="form-grid">
-        <label>Full Name
-          <input id="studentName" type="text" placeholder="e.g. Rahul Kumar" />
-        </label>
-        <label>Date of Birth
-          <input id="studentDob" type="date" />
-        </label>
-      </div>
-
-      <div class="form-actions">
-        <button id="startBtn" class="btn-primary">Start Test</button>
-        <button id="viewHistoryBtn" class="btn-ghost">View Past Results</button>
-      </div>
-    </section>
-
-    <!-- Quiz screen -->
-    <section id="quizScreen" class="card" style="display:none;">
-      <div class="meta">
-        <div>
-          <div id="studentBadge"></div>
-          <div class="muted" id="dobBadge"></div>
-        </div>
-        <div class="timer-block">
-          <div id="timer" class="timer">10:00</div>
-        </div>
-      </div>
-
-      <div class="progress"><i id="progBar"></i></div>
-      <div id="qCount" class="muted">Q 1/10</div>
-
-      <div id="questionBox" class="q-box"></div>
-
-      <div class="navs">
-        <button id="prevBtn" class="btn-ghost">Previous</button>
-        <button id="nextBtn" class="btn-ghost">Next</button>
-        <button id="submitBtn" class="btn-primary">Submit</button>
-      </div>
-
-      <div class="q-grid" id="qNav"></div>
-    </section>
-
-    <!-- Score screen -->
-    <section id="scoreScreen" class="card" style="display:none;">
-      <h2>Test Result</h2>
-      <div class="result-summary">
-        <div><strong>Score:</strong> <span id="marksText">--</span></div>
-        <div><strong>Correct:</strong> <span id="correctCount">--</span></div>
-        <div><strong>Incorrect:</strong> <span id="incorrectCount">--</span></div>
-      </div>
-
-      <div class="score-actions">
-        <button id="toggleDetailsBtn" class="btn-primary">View Detailed Results</button>
-        <!-- <button id="downloadJsonBtn" class="btn-ghost">Download JSON</button> -->
-        <button id="backToStartBtn" class="btn-ghost">Back to Start</button>
-      </div>
-
-      <table id="resultTable" class="result-table" style="display:none;">
-        <thead>
-          <tr><th>#</th><th>Question</th><th>Your Answer</th><th>Correct</th><th>Mark</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-
-      <div class="saved-attempts">
-        <h3>Saved Attempts</h3>
-        <div id="attemptsList" class="attempts-list"></div>
-      </div>
-    </section>
-  </div>
+  <main id="app"></main>
 
   <script src="script.js"></script>
 </body>

@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "Who wrote the National Anthem of India?",
+      "question_hi": "भारत का राष्ट्रगान किसने लिखा?",
+      "options_en": ["Mahatma Gandhi", "Rabindranath Tagore", "Jawaharlal Nehru", "B. R. Ambedkar"],
+      "options_hi": ["महात्मा गांधी", "रवीन्द्रनाथ टैगोर", "जवाहरलाल नेहरू", "भीमराव अंबेडकर"],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question_en": "H2O is chemical formula of?",
+      "question_hi": "H2O किसका रासायनिक सूत्र है?",
+      "options_en": ["Oxygen", "Hydrogen", "Water", "Carbon Dioxide"],
+      "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "पानी", "कार्बन डाइऑक्साइड"],
+      "answer": 2
+    }
+  ]
+}
