@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "Largest planet in our solar system?",
+      "question_hi": "हमारे सौरमंडल का सबसे बड़ा ग्रह कौन सा है?",
+      "options_en": ["Earth", "Mars", "Jupiter", "Venus"],
+      "options_hi": ["पृथ्वी", "मंगल", "बृहस्पति", "शुक्र"],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question_en": "Speed of light is approx?",
+      "question_hi": "प्रकाश की गति लगभग कितनी है?",
+      "options_en": ["3,00,000 km/s", "1,50,000 km/s", "30,000 km/s", "3,000 km/s"],
+      "options_hi": ["3,00,000 किमी/से", "1,50,000 किमी/से", "30,000 किमी/से", "3,000 किमी/से"],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "question_en": "What is the value of 12 × 15?",
+      "question_hi": "12 × 15 का मान क्या है?",
+      "options_en": ["120", "150", "180", "200"],
+      "options_hi": ["120", "150", "180", "200"],
+      "answer": 2
+    },
+    {
+      "id": 4,
+      "question_en": "If a number is divided by 5, remainder is 2. What will be the remainder when square of that number is divided by 5?",
+      "question_hi": "यदि किसी संख्या को 5 से भाग देने पर शेषफल 2 आता है, तो उस संख्या के वर्ग को 5 से भाग देने पर शेषफल क्या होगा?",
+      "options_en": ["0", "1", "2", "4"],
+      "options_hi": ["0", "1", "2", "4"],
+      "answer": 3
+    },
+    {
+      "id": 5,
+      "question_en": "The average of first five multiples of 3 is?",
+      "question_hi": "3 के पहले पाँच गुणकों का औसत क्या है?",
+      "options_en": ["9", "12", "15", "18"],
+      "options_hi": ["9", "12", "15", "18"],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "question_en": "The simple interest on Rs. 5000 at 8% per annum for 2 years is?",
+      "question_hi": "5000 रुपये पर 8% वार्षिक दर से 2 वर्षों का साधारण ब्याज कितना होगा?",
+      "options_en": ["800", "700", "600", "900"],
+      "options_hi": ["800", "700", "600", "900"],
+      "answer": 0
+    },
+    {
+      "id": 7,
+      "question_en": "Choose the correct spelling:",
+      "question_hi": "सही वर्तनी चुनें:",
+      "options_en": ["Recieve", "Receive", "Receeve", "Reseive"],
+      "options_hi": ["Recieve", "Receive", "Receeve", "Reseive"],
+      "answer": 1
+    },
+    {
+      "id": 8,
+      "question_en": "Fill in the blank: He _____ to school daily.",
+      "question_hi": "रिक्त स्थान भरें: He _____ to school daily.",
+      "options_en": ["go", "goes", "going", "gone"],
+      "options_hi": ["go", "goes", "going", "gone"],
+      "answer": 1
+    },
+    {
+      "id": 9,
+      "question_en": "Find the odd one out: 2, 6, 12, 20, 30",
+      "question_hi": "विषम चुनें: 2, 6, 12, 20, 30",
+      "options_en": ["6", "12", "20", "30"],
+      "options_hi": ["6", "12", "20", "30"],
+      "answer": 2
+    },
+    {
+      "id": 10,
+      "question_en": "If CAT is coded as DBU, then DOG is coded as?",
+      "question_hi": "यदि CAT को DBU के रूप में कूटबद्ध किया गया है, तो DOG को किस रूप में कूटबद्ध किया जाएगा?",
+      "options_en": ["EPH", "EOH", "DPN", "EQH"],
+      "options_hi": ["EPH", "EOH", "DPN", "EQH"],
+      "answer": 0
+    }
+  ]
+}
