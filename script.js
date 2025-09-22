@@ -109,34 +109,86 @@ function renderNavigator() {
 
 function renderQuestion() {
   const q = questions[currentIndex];
+
   document.getElementById("app").innerHTML = `
     <div class="timer">Loading...</div>
     <div class="card">
-      <div class="question">Q${currentIndex+1}. ${q["question_"+language]}</div>
+      <div class="question">
+        Q${currentIndex + 1}. ${q["question_" + language] || ""}
+        ${
+          q.question_img
+            ? `<div><img src="${q.question_img}" class="q-img" alt="question image"></div>`
+            : ""
+        }
+      </div>
+
       <div class="options">
-        ${q["options_"+language].map((opt, i) => `
-          <label class="option-label">
-            <input type="radio" name="q${q.id}" value="${i}" ${answers[q.id]==i?"checked":""}
-              onchange="answers[${q.id}] = ${i}">
-            <span>${opt.startsWith("http") ? `<img src="${opt}" alt="option" style="max-height:60px;">` : opt}</span>
-          </label>`).join("")}
+        ${
+          q["options_" + language]
+            .map((opt, i) => {
+              let text = "";
+              let img = "";
+
+              if (typeof opt === "string") {
+                // string option, could be text or URL
+                if (
+                  opt.startsWith("http") ||
+                  opt.endsWith(".png") ||
+                  opt.endsWith(".jpg")
+                ) {
+                  img = `<img src="${opt}" alt="option" class="opt-img">`;
+                } else {
+                  text = opt;
+                }
+              } else if (typeof opt === "object") {
+                // object option with text + img
+                text = opt.text || "";
+                if (opt.img) {
+                  img = `<img src="${opt.img}" alt="option" class="opt-img">`;
+                }
+              }
+
+              return `
+                <label class="option-label option-box">
+                  <input type="radio" name="q${q.id}" value="${i}"
+                    ${answers[q.id] == i ? "checked" : ""}
+                    onchange="answers[${q.id}] = ${i}">
+                  <span>${text}</span>
+                  ${img}
+                </label>
+              `;
+            })
+            .join("")
+        }
       </div>
+
       <div style="display:flex;justify-content:space-between;margin-top:10px;">
-        <button onclick="prevQ()" ${currentIndex===0?"disabled":""}>Prev</button>
-        <button onclick="nextQ()" ${currentIndex===questions.length-1?"disabled":""}>Next</button>
+        <button onclick="prevQ()" ${currentIndex === 0 ? "disabled" : ""}>Prev</button>
+        <button onclick="nextQ()" ${currentIndex === questions.length - 1 ? "disabled" : ""}>Next</button>
       </div>
+
       <button style="margin-top:15px;" onclick="submitTest()">Submit Test</button>
-      
-      <!-- Question Navigation Circles at Bottom -->
+
+      <!-- Question Navigation Circles -->
       <div class="question-nav">
-        ${questions.map((_, i) => `
-          <span class="circle ${i===currentIndex?"active":(answers[questions[i].id]!==undefined?"answered":"")}" 
-                onclick="goToQ(${i})">${i+1}</span>
-        `).join("")}
+        ${questions
+          .map(
+            (_, i) => `
+            <span class="circle
+              ${i === currentIndex ? "active" : answers[questions[i].id] !== undefined ? "answered" : ""}"
+              onclick="goToQ(${i})">
+              ${i + 1}
+            </span>
+          `
+          )
+          .join("")}
       </div>
-    </div>`;
+    </div>
+  `;
+
   renderTimer();
 }
+
 
 function goToQ(index) {
   currentIndex = index;
