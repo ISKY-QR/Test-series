@@ -1,3 +1,4 @@
+// script.js
 let student = {};
 let questions = [];
 let answers = {};
@@ -5,8 +6,9 @@ let currentIndex = 0;
 let timer;
 let timeLeft = 600; // 10 mins for 10 questions
 let language = "en"; // default language
+let currentScreen = "start";
 
-// Language toggle (always visible)
+// Language toggle
 document.getElementById("langToggle").addEventListener("click", () => {
   language = language === "en" ? "hi" : "en";
   document.getElementById("langToggle").innerText =
@@ -17,14 +19,12 @@ document.getElementById("langToggle").addEventListener("click", () => {
 // Detect coaching center
 const urlParams = new URLSearchParams(window.location.search);
 let coachingCenter = urlParams.get("center");
-
 if (!coachingCenter) {
   const pathParts = window.location.pathname.split("/").filter(Boolean);
   coachingCenter = pathParts[pathParts.length - 1];
 }
-
 if (!coachingCenter || coachingCenter.endsWith(".html")) {
-  coachingCenter = "success-coaching-center"; // default fallback
+  coachingCenter = "the-scholar"; // default fallback
 }
 
 // Fetch questions
@@ -43,12 +43,10 @@ fetch(`questions/${coachingCenter}.json`)
   });
 
 // ---------- Screens ----------
-let currentScreen = "start"; // track what to render
-
 function renderCurrentScreen() {
   if (currentScreen === "start") renderStartPage();
   else if (currentScreen === "quiz") renderQuestion();
-  else if (currentScreen === "result") submitTest();
+  else if (currentScreen === "result") submitTest(true);
   else if (currentScreen === "details") viewDetailedResult();
 }
 
@@ -71,12 +69,19 @@ function startTest() {
   startTimer();
   currentScreen = "quiz";
   renderQuestion();
+
+  // Warn on page exit
+  window.onbeforeunload = () => "Test is in progress. Are you sure you want to leave?";
 }
 
 function startTimer() {
   timer = setInterval(() => {
     timeLeft--;
-    if (timeLeft <= 0) { clearInterval(timer); submitTest(); }
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      alert("⏰ Time is up! Auto submitting your test.");
+      submitTest(true);
+    }
     renderTimer();
   }, 1000);
 }
@@ -84,11 +89,25 @@ function startTimer() {
 function renderTimer() {
   let min = Math.floor(timeLeft / 60);
   let sec = timeLeft % 60;
-  document.querySelector(".timer").innerText = `⏳ Time Left: ${min}:${sec < 10 ? "0" : ""}${sec}`;
+  let el = document.querySelector(".timer");
+  if (el) el.innerText = `⏳ Time Left: ${min}:${sec < 10 ? "0" : ""}${sec}`;
+}
+
+function renderNavigator() {
+  return `
+    <div class="navigator">
+      ${questions.map((q, i) => {
+        let answered = answers[q.id] !== undefined;
+        let classes = "nav-circle";
+        if (i === currentIndex) classes += " current";
+        if (answered) classes += " answered";
+        return `<div class="${classes}" onclick="jumpToQ(${i})">${i + 1}</div>`;
+      }).join("")}
+    </div>
+  `;
 }
 
 function renderQuestion() {
-  currentScreen = "quiz";
   const q = questions[currentIndex];
   document.getElementById("app").innerHTML = `
     <div class="timer">Loading...</div>
@@ -96,10 +115,10 @@ function renderQuestion() {
       <div class="question">Q${currentIndex+1}. ${q["question_"+language]}</div>
       <div class="options">
         ${q["options_"+language].map((opt, i) => `
-          <label>
+          <label class="option-label">
             <input type="radio" name="q${q.id}" value="${i}" ${answers[q.id]==i?"checked":""}
               onchange="answers[${q.id}] = ${i}">
-            <span>${opt}</span>
+            <span>${opt.startsWith("http") ? `<img src="${opt}" alt="option" style="max-height:60px;">` : opt}</span>
           </label>`).join("")}
       </div>
       <div style="display:flex;justify-content:space-between;margin-top:10px;">
@@ -107,16 +126,39 @@ function renderQuestion() {
         <button onclick="nextQ()" ${currentIndex===questions.length-1?"disabled":""}>Next</button>
       </div>
       <button style="margin-top:15px;" onclick="submitTest()">Submit Test</button>
+      
+      <!-- Question Navigation Circles at Bottom -->
+      <div class="question-nav">
+        ${questions.map((_, i) => `
+          <span class="circle ${i===currentIndex?"active":(answers[questions[i].id]!==undefined?"answered":"")}" 
+                onclick="goToQ(${i})">${i+1}</span>
+        `).join("")}
+      </div>
     </div>`;
   renderTimer();
 }
 
+function goToQ(index) {
+  currentIndex = index;
+  renderQuestion();
+}
+
+
 function prevQ(){ if(currentIndex>0){ currentIndex--; renderQuestion(); }}
 function nextQ(){ if(currentIndex<questions.length-1){ currentIndex++; renderQuestion(); }}
+function jumpToQ(i){ currentIndex = i; renderQuestion(); }
 
-function submitTest() {
+function submitTest(skipConfirm = false) {
+  if (!skipConfirm) {
+    if (!confirm("Are you sure you want to submit?")) {
+      return;
+    }
+  }
+
   currentScreen = "result";
   clearInterval(timer);
+  window.onbeforeunload = null; // remove leave warning
+
   let correct = 0, incorrect = 0;
   questions.forEach(q => {
     if (answers[q.id] == q.answer) correct++;
@@ -140,17 +182,32 @@ function submitTest() {
 
 function viewDetailedResult() {
   currentScreen = "details";
-  let details = questions.map(q => `
-    <div class="card">
-      <div class="question">Q${q.id}. ${q["question_"+language]}</div>
-      <p><b>Your Answer:</b> ${answers[q.id]!==undefined?q["options_"+language][answers[q.id]]:"Not Attempted"}</p>
-      <p><b>Correct Answer:</b> ${q["options_"+language][q.answer]}</p>
-    </div>`).join("");
+
+  let details = questions.map(q => {
+    let questionHTML = `
+      <div class="question">
+        Q${q.id}. ${q["question_"+language] || ""}
+        ${q.question_img ? `<div><img src="${q.question_img}" class="q-img"></div>` : ""}
+      </div>
+    `;
+    let yourAnswerIndex = answers[q.id];
+    let optionsHTML = q["options_"+language].map((opt, i) => {
+      let text = typeof opt === "string" ? opt : opt.text || "";
+      let img = (typeof opt === "object" && opt.img) ? `<img src="${opt.img}" class="opt-img">` : "";
+      let selected = yourAnswerIndex === i ? "✅ Your Answer" : "";
+      let correct = q.answer === i ? "✔ Correct Answer" : "";
+      return `<div class="card option-result">
+                <span>${text} ${selected} ${correct}</span>
+                ${img}
+              </div>`;
+    }).join("");
+    return `<div class="card">${questionHTML}${optionsHTML}</div>`;
+  }).join("");
 
   document.getElementById("app").innerHTML = `
     <div class="timer">Test Finished</div>
     ${details}
-    <button onclick="submitTest()">Back to Summary</button>`;
+    <button onclick="submitTest(true)">Back to Summary</button>`;
 }
 
 function downloadResult(correct, incorrect) {

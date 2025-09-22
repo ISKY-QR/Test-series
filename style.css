@@ -1,3 +1,4 @@
+/* style.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -47,6 +48,25 @@ body {
   font-weight: bold;
 }
 
+.q-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.opt-img {
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+  margin: 5px auto;
+}
+
+.option-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 .app-title {
   font-size: 1.2rem;
@@ -103,18 +123,77 @@ button:hover {
   background: #1cc88a;
 }
 
-.options label {
-  display: block;
-  background: #f9f9f9;
-  padding: 10px;
-  margin: 6px 0;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
 .timer {
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
   color: #e74a3b;
 }
+
+/* Question navigator */
+.navigator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.nav-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  background: white;
+}
+
+.nav-circle.current {
+  border-color: #4e73df;
+  background: #eef4ff;
+}
+
+.nav-circle.answered {
+  background: #1cc88a;
+  color: white;
+  border-color: #1cc88a;
+}
+
+.question-nav {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+  gap: 8px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.circle:hover {
+  background: #bbb;
+}
+
+.circle.active {
+  background: #007bff;
+  color: white;
+}
+
+.circle.answered {
+  background: #28a745;
+  color: white;
+}
+

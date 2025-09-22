@@ -2,83 +2,19 @@
   "questions": [
     {
       "id": 1,
-      "question_en": "Which river is known as the 'Sorrow of Bihar'?",
-      "question_hi": "कौन सी नदी 'बिहार का शोक' के नाम से जानी जाती है?",
-      "options_en": ["Ganga", "Kosi", "Yamuna", "Son"],
-      "options_hi": ["गंगा", "कोसी", "यमुना", "सोन"],
-      "answer": 1
+      "question_en": "What is the capital of India?",
+      "question_hi": "भारत की राजधानी क्या है?",
+      "options_en": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+      "options_hi": ["दिल्ली", "मुंबई", "कोलकाता", "चेन्नई"],
+      "answer": 0
     },
     {
       "id": 2,
-      "question_en": "5 × 8 = ?",
-      "question_hi": "5 × 8 = ?",
-      "options_en": ["35", "40", "45", "50"],
-      "options_hi": ["35", "40", "45", "50"],
+      "question_en": "2 + 2 = ?",
+      "question_hi": "२ + २ = ?",
+      "options_en": ["3", "4", "5", "6"],
+      "options_hi": ["३", "४", "५", "६"],
       "answer": 1
-    },
-    {
-      "id": 3,
-      "question_en": "Who is known as the Missile Man of India?",
-      "question_hi": "भारत के 'मिसाइल मैन' के रूप में कौन जाने जाते हैं?",
-      "options_en": ["A.P.J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "Rakesh Sharma"],
-      "options_hi": ["ए.पी.जे. अब्दुल कलाम", "विक्रम साराभाई", "होमी भाभा", "राकेश शर्मा"],
-      "answer": 0
-    },
-    {
-      "id": 4,
-      "question_en": "If 12 is subtracted from 36, the result is?",
-      "question_hi": "36 में से 12 घटाने पर परिणाम क्या होगा?",
-      "options_en": ["12", "20", "22", "24"],
-      "options_hi": ["12", "20", "22", "24"],
-      "answer": 3
-    },
-    {
-      "id": 5,
-      "question_en": "Which part of the plant conducts food?",
-      "question_hi": "पौधे का कौन सा भाग भोजन का परिवहन करता है?",
-      "options_en": ["Xylem", "Phloem", "Root", "Leaf"],
-      "options_hi": ["जाइलम", "फ्लोएम", "जड़", "पत्ती"],
-      "answer": 1
-    },
-    {
-      "id": 6,
-      "question_en": "Find the missing number: 3, 6, 12, 24, ?",
-      "question_hi": "रिक्त संख्या खोजें: 3, 6, 12, 24, ?",
-      "options_en": ["36", "48", "60", "72"],
-      "options_hi": ["36", "48", "60", "72"],
-      "answer": 1
-    },
-    {
-      "id": 7,
-      "question_en": "Select the correctly spelt word:",
-      "question_hi": "सही वर्तनी वाला शब्द चुनें:",
-      "options_en": ["Enviroment", "Environment", "Envirnment", "Environmment"],
-      "options_hi": ["Enviroment", "Environment", "Envirnment", "Environmment"],
-      "answer": 1
-    },
-    {
-      "id": 8,
-      "question_en": "Fill in the blank: She _____ playing piano beautifully.",
-      "question_hi": "रिक्त स्थान भरें: She _____ playing piano beautifully.",
-      "options_en": ["is", "are", "were", "be"],
-      "options_hi": ["is", "are", "were", "be"],
-      "answer": 0
-    },
-    {
-      "id": 9,
-      "question_en": "Find the odd one out: Lion, Tiger, Elephant, Leopard",
-      "question_hi": "विषम चुनें: शेर, बाघ, हाथी, तेंदुआ",
-      "options_en": ["Lion", "Tiger", "Elephant", "Leopard"],
-      "options_hi": ["शेर", "बाघ", "हाथी", "तेंदुआ"],
-      "answer": 2
-    },
-    {
-      "id": 10,
-      "question_en": "If PEN is coded as QFO, then CAT is coded as?",
-      "question_hi": "यदि PEN को QFO के रूप में कूटबद्ध किया गया है, तो CAT को किस रूप में कूटबद्ध किया जाएगा?",
-      "options_en": ["DBU", "CBU", "DAS", "DCU"],
-      "options_hi": ["DBU", "CBU", "DAS", "DCU"],
-      "answer": 0
     }
   ]
 }

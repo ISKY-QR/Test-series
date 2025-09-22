@@ -1,0 +1,175 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "What is HCF of 84, 126 and 210?",
+      "question_hi": "84, 126 और 210 का HCF (महत्तम समापवर्तक) क्या है?",
+      "options_en": ["6", "14", "21", "42"],
+      "options_hi": ["6", "14", "21", "42"],
+      "answer": 3
+    },
+    {
+      "id": 2,
+      "question_en": "If a train runs at 60 km/h, how long will it take to cover 150 km?",
+      "question_hi": "अगर कोई ट्रेन 60 कि॰मी॰/घंटा की रफ्तार से चलती है, तो 150 कि॰मी॰ तय करने में कितना समय लगेगा?",
+      "options_en": ["2.5 hours", "2 hours", "3 hours", "2 hours 30 minutes"],
+      "options_hi": ["2.5 घंटे", "2 घंटे", "3 घंटे", "2 घंटे 30 मिनट"],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "question_en": "The price of an article is increased by 20% to 180. What was the original price?",
+      "question_hi": "एक वस्तु की कीमत में 20% की वृद्धि कर के वह ₹180 हो गई। मूल कीमत क्या थी?",
+      "options_en": ["₹144", "₹150", "₹160", "₹170"],
+      "options_hi": ["₹144", "₹150", "₹160", "₹170"],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question_en": "A bag contains 5 red, 6 blue and 9 green balls. If one ball is picked at random, what is the probability it is blue?",
+      "question_hi": "एक बैग में 5 लाल, 6 नीले और 9 हरे गेंदें हैं। यादृच्छिक रूप से एक गेंद निकाली जाए। वह नीली होने की संभावना क्या है?",
+      "options_en": ["6/20", "3/10", "6/19", "1/4"],
+      "options_hi": ["6/20", "3/10", "6/19", "1/4"],
+      "answer": 0
+    },
+    {
+      "id": 5,
+      "question_en": "Solve: 12 × (8 − 3) + 5²",
+      "question_hi": "सुलझाएँ: 12 × (8 − 3) + 5²",
+      "options_en": ["75", "70", "65", "80"],
+      "options_hi": ["75", "70", "65", "80"],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "question_en": "Find the next in series: 2, 5, 11, 23, ____",
+      "question_hi": "श्रृंखला में अगला संख्या क्या होगी: 2, 5, 11, 23, ____",
+      "options_en": ["46", "47", "45", "44"],
+      "options_hi": ["46", "47", "45", "44"],
+      "answer": 0
+    },
+    {
+      "id": 7,
+      "question_en": "If A + B means A is the father of B, A − B means A is the mother of B, which of the following means ‘P is maternal grandfather of Q’?",
+      "question_hi": "यदि A + B का मतलब है A, B के पिता हैं और A − B का मतलब है A, B की माँ है, निम्नलिखित में से कौन-सा वाक्य ‘P Q का मातृ-पिता’ दर्शाता है?",
+      "options_en": ["P + R − Q", "P − R + Q", "R + P − Q", "Q + P − R"],
+      "options_hi": ["P + R − Q", "P − R + Q", "R + P − Q", "Q + P − R"],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "question_en": "Which one does not belong to the group?",
+      "question_hi": "इनमें से कौन-सा समूह से संबंधित नहीं है?",
+      "options_en": ["Square", "Rectangle", "Circle", "Triangle"],
+      "options_hi": ["वर्ग", "आयत", "वृत्त", "त्रिभुज"],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question_en": "If 5 machines take 8 hours to finish a job, how long will 8 machines take (assuming all are alike)?",
+      "question_hi": "यदि 5 मशीनें एक काम को पूरा करने में 8 घंटे लगाती हैं, तो 8 मशीनों को कितना समय लगेगा (मान लेते हैं कि सब समान मशीनें हैं)?",
+      "options_en": ["5 hours", "8/5 hours", "3 hours", "5⅓ hours"],
+      "options_hi": ["5 घंटे", "8/5 घंटे", "3 घंटे", "5⅓ घंटे"],
+      "answer": 3
+    },
+  {
+      "id": 10,
+      "question_en": "Which figure comes next?",
+      "question_hi": "अगला चित्र कौन सा है?",
+      "question_img": "images/kg.png", 
+      "options_en": [
+        {"text": "Circle", "img": "images/kg.png"},
+        {"text": "Square", "img": "images/kg.png"},
+        {"text": "Triangle", "img": "images/kg.png"},
+        {"text": "Hexagon", "img": "images/kg.png"}
+      ],
+      "options_hi": [
+        {"text": "वृत्त", "img": "images/opt1.png"},
+        {"text": "वर्ग", "img": "images/opt2.png"},
+        {"text": "त्रिभुज", "img": "images/opt3.png"},
+        {"text": "षट्भुज", "img": "images/opt4.png"}
+      ],
+      "answer": 2
+    },
+    {
+      "id": 11,
+      "question_en": "Choose the word which is most nearly opposite in meaning to 'Obscure'.",
+      "question_hi": "'Obscure' शब्द का अर्थ है अस्पष्ट या छुपा हुआ। निम्नलिखित में से वह शब्द चुनें जो इसके बिल्कुल विपरीत अर्थ रखता है।",
+      "options_en": ["Vague", "Hidden", "Clear", "Unknown"],
+      "options_hi": ["अनिर्धारित", "छुपा हुआ", "स्पष्ट", "अज्ञात"],
+      "answer": 2
+    },
+    {
+      "id": 12,
+      "question_en": "Fill in the blank: Neither the students ______ the teacher were aware of the exam schedule.",
+      "question_hi": "रिक्त स्थान भरें: छात्रों में से न ______ शिक्षक परीक्षा की तारीख से अवगत थे।",
+      "options_en": ["nor", "or", "and", "but"],
+      "options_hi": ["न ही", "या", "और", "लेकिन"],
+      "answer": 0
+    },
+    {
+      "id": 13,
+      "question_en": "Spot the error: Each of the paintings are hung carefully in the gallery.",
+      "question_hi": "गलती खोजें: नापे जाने वाले वाक्य में कौन सी गलती है: \"Each of the paintings are hung carefully in the gallery.\"",
+      "options_en": ["Each … are", "hangs … carefully", "carefully in", "paintings are hung"],
+      "options_hi": ["Each … are", "लटकाए जाते हैं … सावधानी से", "सावधानी से में", "चित्र लटकाए गए"],
+      "answer": 0
+    },
+    {
+      "id": 14,
+      "question_en": "One word substitution: A person who believes that change is possible in society and works towards it. __________",
+      "question_hi": "एक शब्द जिसमें व्यक्त किया जाए: ऐसा व्यक्ति जो मानता है कि समाज में परिवर्तन संभव है और उसके लिए काम करता है। __________",
+      "options_en": ["Pessimist", "Realist", "Idealist", "Optimist"],
+      "options_hi": ["निराशावादी", "वास्तववादी", "आदर्शवादी", "आशावादी"],
+      "answer": 2
+    },
+    {
+      "id": 15,
+      "question_en": "Choose the correct synonym of 'Magnanimous'.",
+      "question_hi": "'Magnanimous' का समानार्थक शब्द चुनें।",
+      "options_en": ["Greedy", "Generous", "Selfish", "Petty"],
+      "options_hi": ["लालची", "उदार", "स्वार्थी", "छोटा विचारशील"],
+      "answer": 1
+    },
+    {
+      "id": 16,
+      "question_en": "Which of the following rivers does *not* flow through the state of Uttar Pradesh?",
+      "question_hi": "निम्नलिखित नदियों में से कौन-सी नदी उत्तर प्रदेश से नहीं होकर बहती?",
+      "options_en": ["Ganga", "Yamuna", "Godavari", "Gandak"],
+      "options_hi": ["गंगा", "यमुना", "गोदावरी", "गंडक"],
+      "answer": 2
+    },
+    {
+      "id": 17,
+      "question_en": "Who is the current Chief Election Commissioner of India (as of September 2025)?",
+      "question_hi": "भारत के वर्तमान मुख्य चुनाव आयुक्त कौन हैं (सितंबर 2025 तक)?",
+      "options_en": ["Rajiv Kumar", "C. K. Sadananda", "M. M. Kutty", "Sunil Arora"],
+      "options_hi": ["राजीव कुमार", "सी.के. सदानंद", "एम.एम. कुट्टी", "सुनील अरोड़ा"],
+      "answer": 0
+    },
+    {
+      "id": 18,
+      "question_en": "What is the capital of Finland?",
+      "question_hi": "फिनलैंड की राजधानी क्या है?",
+      "options_en": ["Oslo", "Stockholm", "Helsinki", "Copenhagen"],
+      "options_hi": ["ओस्लो", "स्टॉकहोम", "हेलसिंकी", "कोपेनहेगन"],
+      "answer": 2
+    },
+    {
+      "id": 19,
+      "question_en": "Which element is needed for the rusting of iron?",
+      "question_hi": "लोहे के जंग लगने के लिए कौन-सा तत्व आवश्यक है?",
+      "options_en": ["Nitrogen", "Oxygen", "Helium", "Argon"],
+      "options_hi": ["नाइट्रोजन", "ऑक्सीजन", "हीलियम", "आर्गन"],
+      "answer": 1
+    },
+    {
+      "id": 20,
+      "question_en": "In which year did India conduct its first nuclear test (Pokhran I)?",
+      "question_hi": "भारत ने अपनी पहली परमाणु परीक्षण (पोकरण-I) किस वर्ष किया था?",
+      "options_en": ["1972", "1974", "1975", "1976"],
+      "options_hi": ["1972", "1974", "1975", "1976"],
+      "answer": 1
+    }
+  ]
+}
