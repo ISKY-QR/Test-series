@@ -24,7 +24,7 @@ if (!coachingCenter) {
   coachingCenter = pathParts[pathParts.length - 1];
 }
 if (!coachingCenter || coachingCenter.endsWith(".html")) {
-  coachingCenter = "top-rankers"; // default fallback
+  coachingCenter = "Ahmed-Coaching"; // default fallback
 }
 
 // Fetch questions
@@ -32,6 +32,13 @@ fetch(`questions/${coachingCenter}.json`)
   .then(res => res.json())
   .then(data => {
     questions = data.questions;
+
+    // Update header with coaching name if present
+    if (data.name) {
+      document.querySelector(".app-title").innerText = data.name;
+    }
+
+
     renderStartPage();
   })
   .catch(() => {
@@ -97,12 +104,12 @@ function renderNavigator() {
   return `
     <div class="navigator">
       ${questions.map((q, i) => {
-        let answered = answers[q.id] !== undefined;
-        let classes = "nav-circle";
-        if (i === currentIndex) classes += " current";
-        if (answered) classes += " answered";
-        return `<div class="${classes}" onclick="jumpToQ(${i})">${i + 1}</div>`;
-      }).join("")}
+    let answered = answers[q.id] !== undefined;
+    let classes = "nav-circle";
+    if (i === currentIndex) classes += " current";
+    if (answered) classes += " answered";
+    return `<div class="${classes}" onclick="jumpToQ(${i})">${i + 1}</div>`;
+  }).join("")}
     </div>
   `;
 }
@@ -115,51 +122,37 @@ function renderQuestion() {
     <div class="card">
       <div class="question">
         Q${currentIndex + 1}. ${q["question_" + language] || ""}
-        ${
-          q.question_img
-            ? `<div><img src="${q.question_img}" class="q-img" alt="question image"></div>`
-            : ""
-        }
+        ${q.question_img ? `<div><img src="${q.question_img}" class="q-img" alt="question image"></div>` : ""}
       </div>
-
       <div class="options">
-        ${
-          q["options_" + language]
-            .map((opt, i) => {
-              let text = "";
-              let img = "";
+        ${q["options_" + language].map((opt, i) => {
+    let text = "";
+    let img = "";
 
-              if (typeof opt === "string") {
-                // string option, could be text or URL
-                if (
-                  opt.startsWith("http") ||
-                  opt.endsWith(".png") ||
-                  opt.endsWith(".jpg")
-                ) {
-                  img = `<img src="${opt}" alt="option" class="opt-img">`;
-                } else {
-                  text = opt;
-                }
-              } else if (typeof opt === "object") {
-                // object option with text + img
-                text = opt.text || "";
-                if (opt.img) {
-                  img = `<img src="${opt.img}" alt="option" class="opt-img">`;
-                }
-              }
+    if (typeof opt === "string") {
+      // string option, could be text or URL
+      if (opt.startsWith("http") || opt.endsWith(".png") || opt.endsWith(".jpg")) {
+        img = `<img src="${opt}" alt="option" class="opt-img">`;
+      } else {
+        text = opt;
+      }
+    } else if (typeof opt === "object") {
+      // object option with text + img
+      text = opt.text || "";
+      if (opt.img) {
+        img = `<img src="${opt.img}" alt="option" class="opt-img">`;
+      }
+    }
 
-              return `
-                <label class="option-label option-box">
-                  <input type="radio" name="q${q.id}" value="${i}"
-                    ${answers[q.id] == i ? "checked" : ""}
-                    onchange="answers[${q.id}] = ${i}">
-                  <span>${text}</span>
-                  ${img}
-                </label>
-              `;
-            })
-            .join("")
-        }
+    return `
+            <label class="option-label option-box">
+              <input type="radio" name="q${q.id}" value="${i}" ${answers[q.id] == i ? "checked" : ""}
+                onchange="answers[${q.id}] = ${i}">
+              <span>${text}</span>
+              ${img}
+            </label>
+          `;
+  }).join("")}
       </div>
 
       <div style="display:flex;justify-content:space-between;margin-top:10px;">
@@ -168,23 +161,15 @@ function renderQuestion() {
       </div>
 
       <button style="margin-top:15px;" onclick="submitTest()">Submit Test</button>
-
-      <!-- Question Navigation Circles -->
+      
+      <!-- Question Navigation Circles at Bottom -->
       <div class="question-nav">
-        ${questions
-          .map(
-            (_, i) => `
-            <span class="circle
-              ${i === currentIndex ? "active" : answers[questions[i].id] !== undefined ? "answered" : ""}"
-              onclick="goToQ(${i})">
-              ${i + 1}
-            </span>
-          `
-          )
-          .join("")}
+        ${questions.map((_, i) => `
+          <span class="circle ${i === currentIndex ? "active" : (answers[questions[i].id] !== undefined ? "answered" : "")}" 
+                onclick="goToQ(${i})">${i + 1}</span>
+        `).join("")}
       </div>
-    </div>
-  `;
+    </div>`;
 
   renderTimer();
 }
@@ -196,24 +181,23 @@ function goToQ(index) {
 }
 
 
-function prevQ(){ if(currentIndex>0){ currentIndex--; renderQuestion(); }}
-function nextQ(){ if(currentIndex<questions.length-1){ currentIndex++; renderQuestion(); }}
-function jumpToQ(i){ currentIndex = i; renderQuestion(); }
+function prevQ() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+function nextQ() { if (currentIndex < questions.length - 1) { currentIndex++; renderQuestion(); } }
+function jumpToQ(i) { currentIndex = i; renderQuestion(); }
 
 function submitTest(skipConfirm = false) {
   if (!skipConfirm) {
-    if (!confirm("Are you sure you want to submit?")) {
-      return;
-    }
+    if (!confirm("Are you sure you want to submit?")) return;
   }
 
-  currentScreen = "result";
   clearInterval(timer);
-  window.onbeforeunload = null; // remove leave warning
+  currentScreen = "result";
 
-  let correct = 0, incorrect = 0;
+  let correct = 0, incorrect = 0, skipped = 0;
+
   questions.forEach(q => {
-    if (answers[q.id] == q.answer) correct++;
+    if (answers[q.id] === undefined) skipped++;
+    else if (answers[q.id] == q.answer) correct++;
     else incorrect++;
   });
 
@@ -225,12 +209,14 @@ function submitTest(skipConfirm = false) {
         <p><b>DOB:</b> ${student.dob}</p>
         <p class="correct">✅ Correct: ${correct}</p>
         <p class="incorrect">❌ Incorrect: ${incorrect}</p>
+        <p class="skipped">⚪ Skipped: ${skipped}</p>
         <p><b>Score:</b> ${correct}/${questions.length}</p>
       </div>
       <button onclick="viewDetailedResult()">View Detailed Result</button>
-      <button onclick="downloadResult(${correct}, ${incorrect})">Download Result</button>
+      <button onclick="downloadResult(${correct}, ${incorrect}, ${skipped})">Download Result</button>
     </div>`;
 }
+
 
 function viewDetailedResult() {
   currentScreen = "details";
@@ -238,12 +224,12 @@ function viewDetailedResult() {
   let details = questions.map(q => {
     let questionHTML = `
       <div class="question">
-        Q${q.id}. ${q["question_"+language] || ""}
+        Q${q.id}. ${q["question_" + language] || ""}
         ${q.question_img ? `<div><img src="${q.question_img}" class="q-img"></div>` : ""}
       </div>
     `;
     let yourAnswerIndex = answers[q.id];
-    let optionsHTML = q["options_"+language].map((opt, i) => {
+    let optionsHTML = q["options_" + language].map((opt, i) => {
       let text = typeof opt === "string" ? opt : opt.text || "";
       let img = (typeof opt === "object" && opt.img) ? `<img src="${opt.img}" class="opt-img">` : "";
       let selected = yourAnswerIndex === i ? "✅ Your Answer" : "";
@@ -262,14 +248,16 @@ function viewDetailedResult() {
     <button onclick="submitTest(true)">Back to Summary</button>`;
 }
 
-function downloadResult(correct, incorrect) {
-  let text = `Name: ${student.name}\nDOB: ${student.dob}\nCorrect: ${correct}\nIncorrect: ${incorrect}\nScore: ${correct}/${questions.length}\n\nDetailed Result:\n\n`;
-  questions.forEach(q=>{
-    text += `Q${q.id}. ${q["question_"+language]}\nYour: ${answers[q.id]!==undefined?q["options_"+language][answers[q.id]]:"Not Attempted"}\nCorrect: ${q["options_"+language][q.answer]}\n\n`;
+
+function downloadResult(correct, incorrect, skipped) {
+  let text = `Name: ${student.name}\nDOB: ${student.dob}\nCorrect: ${correct}\nIncorrect: ${incorrect}\nSkipped: ${skipped}\nScore: ${correct}/${questions.length}\n\nDetailed Result:\n\n`;
+  questions.forEach(q => {
+    text += `Q${q.id}. ${q["question_" + language]}\nYour: ${answers[q.id] !== undefined ? q["options_" + language][answers[q.id]] : "Skipped"}\nCorrect: ${q["options_" + language][q.answer]}\n\n`;
   });
-  let blob = new Blob([text], {type:"text/plain"});
+  let blob = new Blob([text], { type: "text/plain" });
   let a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = `${student.name.replace(/\s+/g,"_")}_result.txt`;
+  a.download = `${student.name.replace(/\s+/g, "_")}_result.txt`;
   a.click();
 }
+

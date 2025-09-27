@@ -1,0 +1,1810 @@
+{
+  "name": "Ahmed Coaching",
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "Five-fourths of a number is greater than three-fourths of the number by 6. Find the number.",
+      "question_hi": "किसी संख्या का पाँच-चौथाई, उस संख्या के तीन-चौथाई से 6 अधिक है। संख्या ज्ञात कीजिए।",
+      "options_en": [
+        "14",
+        "12",
+        "8",
+        "10"
+      ],
+      "options_hi": [
+        "14",
+        "12",
+        "8",
+        "10"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question_en": "Pipe A is 3 times faster than pipe B. Both pipes together fill a tank in 36 minutes. How much time will pipe A alone take to fill the tank?",
+      "question_hi": "पाइप A, पाइप B से 3 गुना तेज है। दोनों पाइप मिलकर 36 मिनट में टंकी भरते हैं। पाइप A अकेले टंकी भरने में कितना समय लेगा?",
+      "options_en": [
+        "156 min",
+        "80 min",
+        "48 min",
+        "100 min"
+      ],
+      "options_hi": [
+        "156 मिनट",
+        "80 मिनट",
+        "48 मिनट",
+        "100 मिनट"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 3,
+      "question_en": "Mohan gets 12% increase in his sale amount in the first year and 15% increase in the second year, with that his present sale is ₹1,28,800. What was his sale two years ago?",
+      "question_hi": "मोहन को पहले वर्ष में अपनी बिक्री राशि पर 12% की वृद्धि और दूसरे वर्ष में 15% की वृद्धि होती है, जिससे उसकी वर्तमान बिक्री ₹1,28,800 हो जाती है। उसकी दो वर्ष पहले की बिक्री कितनी थी?",
+      "options_en": [
+        "₹1,25,000",
+        "₹1,00,000",
+        "₹1,75,000",
+        "₹1,50,000"
+      ],
+      "options_hi": [
+        "₹1,25,000",
+        "₹1,00,000",
+        "₹1,75,000",
+        "₹1,50,000"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question_en": "A tradesman marked his goods at 26% above its cost price and then allowed a discount of 13%. His gain (in %) is:",
+      "question_hi": "एक व्यापारी ने अपनी वस्तु को लागत मूल्य से 26% अधिक अंकित किया और फिर उस पर 13% की छूट दी। उसका लाभ (%) कितना होगा?",
+      "options_en": [
+        "9.26",
+        "6.92",
+        "9.62",
+        "6.29"
+      ],
+      "options_hi": [
+        "9.26",
+        "6.92",
+        "9.62",
+        "6.29"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question_en": "If x : y = 7 : 3, then (x² + y²) : (x² − y²) = ?",
+      "question_hi": "यदि x : y = 7 : 3 है, तो (x² + y²) : (x² − y²) = ?",
+      "options_en": [
+        "29:20",
+        "25:4",
+        "5:1",
+        "5:2"
+      ],
+      "options_hi": [
+        "29:20",
+        "25:4",
+        "5:1",
+        "5:2"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "question_en": "If A is an acute angle of triangle ABC, then (cosA + sinA − 1) / (cosA − sinA + 1) is equal to:",
+      "question_hi": "यदि A त्रिभुज ABC का एक तीव्र कोण है, तो (cosA + sinA − 1) / (cosA − sinA + 1) का मान क्या है?",
+      "options_en": [
+        "cotA + secA",
+        "tanA + cosA",
+        "cosA + cosecA",
+        "cotA + cosecA"
+      ],
+      "options_hi": [
+        "cotA + secA",
+        "tanA + cosA",
+        "cosA + cosecA",
+        "cotA + cosecA"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 7,
+      "question_en": "A shopkeeper allows successive discounts of 20% and 15% on an item marked at ₹2,000. At what price did he sell the item?",
+      "question_hi": "एक दुकानदार ने ₹2,000 अंकित मूल्य वाली वस्तु पर क्रमशः 20% और 15% की छूट दी। उसने वस्तु को किस मूल्य पर बेचा?",
+      "options_en": [
+        "₹1,300",
+        "₹1,360",
+        "₹1,240",
+        "₹1,200"
+      ],
+      "options_hi": [
+        "₹1,300",
+        "₹1,360",
+        "₹1,240",
+        "₹1,200"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 8,
+      "question_en": "One year ago, Krishna was four times as old as his daughter Kavitha. Six years hence, Krishna's age will be 12 years more than his daughter's age. Find the ratio of the present ages of Krishna and his daughter.",
+      "question_hi": "एक वर्ष पहले कृष्ण की आयु उसकी पुत्री कविता की आयु से चार गुना थी। छह वर्ष बाद, कृष्ण की आयु उसकी पुत्री की आयु से 12 वर्ष अधिक होगी। कृष्ण और उसकी पुत्री की वर्तमान आयु का अनुपात ज्ञात कीजिए।",
+      "options_en": [
+        "12:5",
+        "11:3",
+        "17:5",
+        "9:2"
+      ],
+      "options_hi": [
+        "12:5",
+        "11:3",
+        "17:5",
+        "9:2"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question_en": "A pair of parallel lines is intersected by a transversal such that ∠1 and ∠2 form a pair of interior angles on the same side of the transversal. If m∠1 = 35°, what is the measure of ∠2?",
+      "question_hi": "एक समानांतर रेखाओं की जोड़ी को एक अनुप्रस्थ रेखा काटती है जिससे ∠1 और ∠2 अनुप्रस्थ रेखा की एक ही ओर आंतरिक कोण बनाते हैं। यदि ∠1 = 35° हो, तो ∠2 का मान क्या होगा?",
+      "options_en": [
+        "35°",
+        "55°",
+        "145°",
+        "65°"
+      ],
+      "options_hi": [
+        "35°",
+        "55°",
+        "145°",
+        "65°"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 10,
+      "question_en": "Two banks, A and B, offered loans at 4.5% and 5.5% per annum, respectively. Ramesh borrowed ₹2,00,000 from each bank. Find the positive difference in the simple interest paid to the two banks by Ramesh after 2 years.",
+      "question_hi": "दो बैंक A और B क्रमशः 4.5% और 5.5% वार्षिक दर पर ऋण देते हैं। रमेश ने प्रत्येक बैंक से ₹2,00,000 उधार लिया। 2 वर्षों के बाद रमेश द्वारा दोनों बैंकों को दिए गए साधारण ब्याज में धनात्मक अंतर ज्ञात कीजिए।",
+      "options_en": [
+        "₹8,000",
+        "₹4,000",
+        "₹6,000",
+        "₹2,000"
+      ],
+      "options_hi": [
+        "₹8,000",
+        "₹4,000",
+        "₹6,000",
+        "₹2,000"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 11,
+      "question_en": "What is the least 5-digit number, which when divided by 15, 24, 35 and 42, leaves a remainder of 13 in each case?",
+      "question_hi": "सबसे छोटी पाँच अंकों की वह संख्या कौन-सी है, जिसे 15, 24, 35 और 42 से विभाजित करने पर प्रत्येक बार शेषफल 13 प्राप्त होता है?",
+      "options_en": [
+        "10067",
+        "10093",
+        "10073",
+        "10106"
+      ],
+      "options_hi": [
+        "10067",
+        "10093",
+        "10073",
+        "10106"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 12,
+      "question_en": "Find the roots of 3m² + 10m + 73 = 0.",
+      "question_hi": "3m² + 10m + 73 = 0 के मूल ज्ञात कीजिए।",
+      "options_en": [
+        "3−7 and −23",
+        "3√7 and 23",
+        "3√7 and −3",
+        "3−7 and −3"
+      ],
+      "options_hi": [
+        "3−7 और −23",
+        "3√7 और 23",
+        "3√7 और −3",
+        "3−7 और −3"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 13,
+      "question_en": "Two trains of same length are running on parallel tracks in the same direction at speeds of 56 m/s and 46 m/s. The faster train crosses the slower train in 26 seconds. What is the length of each train?",
+      "question_hi": "दो समान लंबाई की ट्रेनें समांतर पटरियों पर एक ही दिशा में क्रमशः 56 मी/सेकंड और 46 मी/सेकंड की गति से चल रही हैं। तेज ट्रेन 26 सेकंड में धीमी ट्रेन को पार करती है। प्रत्येक ट्रेन की लंबाई कितनी है?",
+      "options_en": [
+        "130 m",
+        "200 m",
+        "140 m",
+        "120 m"
+      ],
+      "options_hi": [
+        "130 मी",
+        "200 मी",
+        "140 मी",
+        "120 मी"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 14,
+      "question_en": "Find the surface area of a sphere whose radius is 7 cm. (Use π = 22/7)",
+      "question_hi": "7 सेमी त्रिज्या वाले गोले का पृष्ठीय क्षेत्रफल ज्ञात कीजिए। (π = 22/7 का प्रयोग करें)",
+      "options_en": [
+        "661 cm²",
+        "166 cm²",
+        "666 cm²",
+        "616 cm²"
+      ],
+      "options_hi": [
+        "661 सेमी²",
+        "166 सेमी²",
+        "666 सेमी²",
+        "616 सेमी²"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 15,
+      "question_en": "The sum of two positive integers is 55. If their HCF and LCM are 5 and 120 respectively, then the sum of their reciprocals is:",
+      "question_hi": "दो धनात्मक पूर्णांकों का योग 55 है। यदि उनका HCF और LCM क्रमशः 5 और 120 हैं, तो उनके व्युत्क्रमों का योग क्या होगा?",
+      "options_en": [
+        "14/6",
+        "12/13",
+        "11/120",
+        "120/13"
+      ],
+      "options_hi": [
+        "14/6",
+        "12/13",
+        "11/120",
+        "120/13"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 16,
+      "question_en": "A cube of edge 18 m is completely filled with milk. The milk is transferred into a cuboid of length 27 m and height 7 m. What is the width of the cuboid?",
+      "question_hi": "18 मीटर भुजा वाले घन को पूरी तरह दूध से भरा गया है। दूध को 27 मीटर लंबाई और 7 मीटर ऊँचाई वाले आयताकार घनाभ में डाला गया। घनाभ की चौड़ाई क्या होगी?",
+      "options_en": [
+        "12.7 m",
+        "30.8 m",
+        "72.5 m",
+        "54.6 m"
+      ],
+      "options_hi": [
+        "12.7 मी",
+        "30.8 मी",
+        "72.5 मी",
+        "54.6 मी"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 17,
+      "question_en": "If the mean of a data is 65 and its mode is 23, then the median using the empirical formula is:",
+      "question_hi": "यदि किसी आंकड़े का माध्य 65 और बहुलक 23 है, तो अनुभवजन्य सूत्र का प्रयोग करके माध्यिका क्या होगी?",
+      "options_en": [
+        "51",
+        "54",
+        "52",
+        "53"
+      ],
+      "options_hi": [
+        "51",
+        "54",
+        "52",
+        "53"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 18,
+      "question_en": "Ten years ago, a son was 1/8th of his father's age. Now, he is 9/37th of his father's present age. What is the present age of the father?",
+      "question_hi": "दस वर्ष पहले पुत्र की आयु पिता की आयु का 1/8 थी। अब पुत्र की आयु पिता की आयु का 9/37 है। पिता की वर्तमान आयु क्या है?",
+      "options_en": [
+        "57 years",
+        "67 years",
+        "74 years",
+        "87 years"
+      ],
+      "options_hi": [
+        "57 वर्ष",
+        "67 वर्ष",
+        "74 वर्ष",
+        "87 वर्ष"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 19,
+      "question_en": "The value of (1 + 2√6) / (1 − 2√6) is:",
+      "question_hi": "(1 + 2√6) / (1 − 2√6) का मान क्या है?",
+      "options_en": [
+        "10√7",
+        "10√5",
+        "10√13",
+        "10√11"
+      ],
+      "options_hi": [
+        "10√7",
+        "10√5",
+        "10√13",
+        "10√11"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 20,
+      "question_en": "If one root of a quadratic equation, α, is half of the other root of the same equation, then find the quadratic equation.",
+      "question_hi": "यदि किसी द्विघात समीकरण का एक मूल α, दूसरे मूल का आधा है, तो द्विघात समीकरण ज्ञात कीजिए।",
+      "options_en": [
+        "x² − 3αx − 2α² = 0",
+        "x² − 3αx + 2α² = 0",
+        "x² + 3αx − 2α² = 0",
+        "x² + 3αx + 2α² = 0"
+      ],
+      "options_hi": [
+        "x² − 3αx − 2α² = 0",
+        "x² − 3αx + 2α² = 0",
+        "x² + 3αx − 2α² = 0",
+        "x² + 3αx + 2α² = 0"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 21,
+      "question_en": "The smallest whole number that must be multiplied to 1083 to make it a perfect square is:",
+      "question_hi": "सबसे छोटा पूर्णांक कौन-सा है जिसे 1083 से गुणा करने पर वह एक पूर्ण वर्ग बन जाएगा?",
+      "options_en": [
+        "2",
+        "11",
+        "4",
+        "3"
+      ],
+      "options_hi": [
+        "2",
+        "11",
+        "4",
+        "3"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 22,
+      "question_en": "If p, q, r and s, the measures of the four angles of a quadrilateral, are in the ratio 3:5:4:6, then the value of 3p + 2r is:",
+      "question_hi": "यदि किसी चतुर्भुज के चार कोण p, q, r और s का अनुपात 3:5:4:6 है, तो 3p + 2r का मान क्या होगा?",
+      "options_en": [
+        "340°",
+        "330°",
+        "310°",
+        "360°"
+      ],
+      "options_hi": [
+        "340°",
+        "330°",
+        "310°",
+        "360°"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 23,
+      "question_en": "The frequency distribution below gives the monthly consumption of electricity of 60 consumers in a locality. What is the median of the data?\n\nMonthly consumption (in units) | Number of consumers\n50–60 → 6\n60–70 → 8\n70–80 → 15\n80–90 → 20\n90–100 → 11",
+      "question_hi": "निम्नलिखित आवृत्ति वितरण किसी क्षेत्र के 60 उपभोक्ताओं की मासिक बिजली खपत को दर्शाता है। आँकड़ों का माध्यिका क्या है?\n\nमासिक खपत (इकाई में) | उपभोक्ताओं की संख्या\n50–60 → 6\n60–70 → 8\n70–80 → 15\n80–90 → 20\n90–100 → 11",
+      "options_en": [
+        "81.2",
+        "83.1",
+        "82.4",
+        "80.5"
+      ],
+      "options_hi": [
+        "81.2",
+        "83.1",
+        "82.4",
+        "80.5"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 24,
+      "question_en": "Simplify: a² + 9b² + c² − 6ab + 6bc − 2ac =",
+      "question_hi": "सरलीकृत कीजिए: a² + 9b² + c² − 6ab + 6bc − 2ac =",
+      "options_en": [
+        "(a − 3b − c)²",
+        "(a + 3b + c)²",
+        "(a − 3b + c)²",
+        "(a + 3b − 2c)²"
+      ],
+      "options_hi": [
+        "(a − 3b − c)²",
+        "(a + 3b + c)²",
+        "(a − 3b + c)²",
+        "(a + 3b − 2c)²"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 25,
+      "question_en": "The value of 1 + 3 + 5 + 7 + ⋯ + 21 is:",
+      "question_hi": "1 + 3 + 5 + 7 + ⋯ + 21 का मान है:",
+      "options_en": [
+        "144",
+        "211",
+        "121",
+        "108"
+      ],
+      "options_hi": [
+        "144",
+        "211",
+        "121",
+        "108"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 26,
+      "question_en": "Refer to the following letter and number series and answer the question:\n\n(Left) G C 6 8 T 7 D 4 6 K 2 R Y 3 5 E S A 4 T Y 7 8 G T (Right)\n\nIf all the numbers are dropped from the series, how many letters are there in the English alphabetical order between the letter that is fourth from the right end and the letter that is sixth from the left end of the given series?",
+      "question_hi": "निम्नलिखित अक्षर और संख्या श्रृंखला देखें और प्रश्न का उत्तर दें:\n\n(बायाँ) G C 6 8 T 7 D 4 6 K 2 R Y 3 5 E S A 4 T Y 7 8 G T (दायाँ)\n\nयदि सभी संख्याएँ हटा दी जाएँ, तो दी गई श्रृंखला के दाएँ छोर से चौथे अक्षर और बाएँ छोर से छठे अक्षर के बीच अंग्रेज़ी वर्णमाला क्रम में कितने अक्षर होंगे?",
+      "options_en": [
+        "One",
+        "Two",
+        "Three",
+        "None"
+      ],
+      "options_hi": [
+        "एक",
+        "दो",
+        "तीन",
+        "कोई नहीं"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 27,
+      "question_en": "Select the set in which the numbers are related in the same way as the numbers of the following sets:\n{5, 21, 2}, {7, 33, 4}\n(Note: Operations should be performed on the whole numbers, without breaking digits.)",
+      "question_hi": "उस समुच्चय का चयन कीजिए जिसमें संख्याएँ निम्नलिखित समुच्चयों {5, 21, 2}, {7, 33, 4} के समान रूप से संबंधित हैं।\n(नोट: क्रियाएँ पूर्ण संख्याओं पर ही की जानी चाहिए, अंकों को अलग करके नहीं।)",
+      "options_en": [
+        "{6, 40, 8}",
+        "{10, 93, 3}",
+        "{8, 51, 9}",
+        "{11, 24, 3}"
+      ],
+      "options_hi": [
+        "{6, 40, 8}",
+        "{10, 93, 3}",
+        "{8, 51, 9}",
+        "{11, 24, 3}"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 28,
+      "question_en": "Sujjan started from a point facing west, turned left and walked 10 m, then turned right and walked 12 m, then turned left and walked 11 m, and then turned left again at point P and walked 17 m. Prior to turning left at point P, he was facing in which direction? (All turns are 90° turns only)",
+      "question_hi": "सुज्जन एक बिंदु से पश्चिम की ओर मुँह करके चला। वह बाएँ मुड़ा और 10 मी चला, फिर दाएँ मुड़ा और 12 मी चला, फिर बाएँ मुड़ा और 11 मी चला, और फिर बिंदु P पर बाएँ मुड़ा और 17 मी चला। बिंदु P पर बाएँ मुड़ने से पहले वह किस दिशा में मुँह किए हुए था? (सभी मोड़ 90° के हैं)",
+      "options_en": [
+        "West",
+        "North",
+        "South",
+        "East"
+      ],
+      "options_hi": [
+        "पश्चिम",
+        "उत्तर",
+        "दक्षिण",
+        "पूर्व"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 29,
+      "question_en": "The following table shows the break-up of the costs (in ₹) incurred by a company in the production of five products A to E. Which of the following products has the maximum manufacturing cost compared to its total cost of production?",
+      "question_hi": "निम्न तालिका में एक कंपनी द्वारा पाँच उत्पाद A से E के उत्पादन में किए गए लागत (₹ में) का विवरण दिया गया है। इनमें से किस उत्पाद की विनिर्माण लागत उसकी कुल उत्पादन लागत की तुलना में अधिकतम है?",
+      "question_img": "images/R-Q4.png",
+      "options_en": [
+        "C",
+        "B",
+        "D",
+        "A"
+      ],
+      "options_hi": [
+        "C",
+        "B",
+        "D",
+        "A"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 30,
+      "question_en": "If '−' means '×', '÷' means '+', '+' means '−' and '×' means '÷', what will come in place of the question mark (?) in the following equation?\n24 + 16 ÷ 132 × 11 − 3 = ?",
+      "question_hi": "यदि '−' का अर्थ '×', '÷' का अर्थ '+', '+' का अर्थ '−' और '×' का अर्थ '÷' है, तो निम्नलिखित समीकरण में प्रश्नवाचक चिन्ह (?) के स्थान पर क्या आएगा?\n24 + 16 ÷ 132 × 11 − 3 = ?",
+      "options_en": [
+        "42",
+        "40",
+        "46",
+        "44"
+      ],
+      "options_hi": [
+        "42",
+        "40",
+        "46",
+        "44"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 31,
+      "question_en": "In a certain code language, MUTINY is written as 25149202113 and MAGIC is written as 397113. How will NECTAR be written in the same language?",
+      "question_hi": "एक निश्चित सांकेतिक भाषा में, MUTINY को 25149202113 और MAGIC को 397113 लिखा जाता है। उसी भाषा में NECTAR को कैसे लिखा जाएगा?",
+      "options_en": [
+        "181203514",
+        "182203614",
+        "191253014",
+        "182103513"
+      ],
+      "options_hi": [
+        "181203514",
+        "182203614",
+        "191253014",
+        "182103513"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 32,
+      "question_en": "Which of the following numbers will replace the question mark (?) in the given series?\n23, 31, 95, 311, ?",
+      "question_hi": "निम्नलिखित श्रृंखला में प्रश्नवाचक चिन्ह (?) के स्थान पर कौन-सी संख्या आएगी?\n23, 31, 95, 311, ?",
+      "options_en": [
+        "818",
+        "876",
+        "832",
+        "823"
+      ],
+      "options_hi": [
+        "818",
+        "876",
+        "832",
+        "823"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 33,
+      "question_en": "How many such pairs of letters are there in the word 'DEVELOP' (in both forward and backward directions) such that they have as many letters between them in the word as there are in the English alphabetical order?",
+      "question_hi": "'DEVELOP' शब्द में (आगे और पीछे दोनों दिशाओं में) कितने ऐसे अक्षर युग्म हैं, जिनके बीच शब्द में उतने ही अक्षर हैं जितने अंग्रेजी वर्णमाला क्रम में उनके बीच हैं?",
+      "options_en": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "options_hi": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 34,
+      "question_en": "Select the option that is related to the fifth letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related to the third letter-cluster.\nFINE : GKQI :: MOST : NQVX :: SEAL : ?",
+      "question_hi": "उस विकल्प का चयन करें जो पाँचवें अक्षर-समूह से उसी प्रकार संबंधित है जैसे दूसरा अक्षर-समूह पहले अक्षर-समूह से और चौथा अक्षर-समूह तीसरे अक्षर-समूह से संबंधित है।\nFINE : GKQI :: MOST : NQVX :: SEAL : ?",
+      "options_en": [
+        "PGTD",
+        "TGPD",
+        "TPGD",
+        "TGDP"
+      ],
+      "options_hi": [
+        "PGTD",
+        "TGPD",
+        "TPGD",
+        "TGDP"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 35,
+      "question_en": "Which of the following numbers will replace the question mark (?) in the given series?\n8, 17, 33, 63, 114, 193, ?",
+      "question_hi": "निम्नलिखित श्रृंखला में प्रश्नवाचक चिन्ह (?) के स्थान पर कौन-सी संख्या आएगी?\n8, 17, 33, 63, 114, 193, ?",
+      "options_en": [
+        "307",
+        "370",
+        "377",
+        "347"
+      ],
+      "options_hi": [
+        "307",
+        "370",
+        "377",
+        "347"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 36,
+      "question_en": "Study the given diagram carefully and answer the question. The numbers in different sections indicate the number of persons.\n\nHow many such babies are there who are NEITHER premature NOR preterm?",
+      "question_hi": "दिए गए चित्र का ध्यानपूर्वक अध्ययन करें और प्रश्न का उत्तर दें। विभिन्न क्षेत्रों में दिए गए संख्याएँ व्यक्तियों की संख्या को दर्शाती हैं।\n\nकितने ऐसे बच्चे हैं जो न तो premature हैं और न ही preterm?",
+      "question_img": "images/R-Q11.png",
+      "options_en": [
+        "5",
+        "4",
+        "6",
+        "11"
+      ],
+      "options_hi": [
+        "5",
+        "4",
+        "6",
+        "11"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 37,
+      "question_en": "A decision is given followed by two statements I and II. Read all the information carefully and select the correct option.\n\nDecision: In order to promote tourism, Country W is declaring 20 of its cities as Heritage Sites.\n\nStatements:\nI. 4 of the 20 cities are located in hilly areas and have limited access to transport.\nII. In the past whenever a city in Country W has been promoted for tourism, it has led to increased employment opportunities in that city.",
+      "question_hi": "एक निर्णय दिया गया है, उसके बाद दो कथन I और II दिए गए हैं। सभी जानकारी ध्यानपूर्वक पढ़ें और सही विकल्प चुनें।\n\nनिर्णय: पर्यटन को बढ़ावा देने के लिए, देश W अपने 20 शहरों को हेरिटेज साइट घोषित कर रहा है।\n\nकथन:\nI. 20 शहरों में से 4 शहर पहाड़ी क्षेत्रों में स्थित हैं और परिवहन के लिए सीमित पहुँच रखते हैं।\nII. अतीत में, जब भी देश W में किसी शहर को पर्यटन के लिए बढ़ावा दिया गया, तो उस शहर में रोजगार के अवसर बढ़ गए।",
+      "options_en": [
+        "Both statement I and II weaken the decision",
+        "Statement I weakens the decision and statement II strengthens the decision",
+        "Statement I is a neutral statement and statement II strengthens the decision",
+        "Both statement I and II strengthen the decision"
+      ],
+      "options_hi": [
+        "दोनों कथन I और II निर्णय को कमजोर करते हैं",
+        "कथन I निर्णय को कमजोर करता है और कथन II निर्णय को मजबूत करता है",
+        "कथन I तटस्थ है और कथन II निर्णय को मजबूत करता है",
+        "दोनों कथन I और II निर्णय को मजबूत करते हैं"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 38,
+      "question_en": "In this question, a group of letters is coded using numbers as per the table and conditions given. The correct combination of codes following the conditions is your answer.\n\nWord: EICHER",
+      "question_hi": "इस प्रश्न में, अक्षरों के समूह को दिए गए तालिका और शर्तों के अनुसार संख्याओं के रूप में कोडित किया गया है। शर्तों के अनुसार सही कोड संयोजन आपका उत्तर है।\n\nशब्द: EICHER",
+      "question_img": "images/R-Q13.png",
+      "options_en": [
+        "814767",
+        "876417",
+        "877416",
+        "876147"
+      ],
+      "options_hi": [
+        "814767",
+        "876417",
+        "877416",
+        "876147"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 39,
+      "question_en": "How many such pairs of letters are there in the word 'ABILITY' (in both forward and backward directions) each of which have as many letters between them in the word as there are in the English alphabetical order?",
+      "question_hi": "'ABILITY' शब्द में (आगे और पीछे दोनों दिशाओं में) कितने ऐसे अक्षर युग्म हैं, जिनके बीच शब्द में उतने ही अक्षर हैं जितने अंग्रेजी वर्णमाला क्रम में उनके बीच हैं?",
+      "options_en": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "options_hi": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 40,
+      "question_en": "Select the option that represents the letters that, when placed from left to right in the blanks below, will complete the letter series.\nP_TPP__S_CT_RSPC_PR_T_RS",
+      "question_hi": "उस विकल्प का चयन करें जो अक्षरों को निम्न रिक्त स्थानों में बाएं से दाएं रखने पर श्रृंखला को पूरा करेगा।\nP_TPP__S_CT_RSPC_PR_T_RS",
+      "options_en": [
+        "CRPCSPPT",
+        "CSPPCRPTP",
+        "CRPPTSCP",
+        "CCPPPPRST"
+      ],
+      "options_hi": [
+        "CRPCSPPT",
+        "CSPPCRPTP",
+        "CRPPTSCP",
+        "CCPPPPRST"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 41,
+      "question_en": "If '−' means '×', '÷' means '+', '×' means '-' and '+' means '÷', what will come in place of the question mark (?) in the following equation?\n288 − 2 ++ 80 × 5 ÷ ÷ 14 = ?",
+      "question_hi": "यदि '−' का अर्थ '×', '÷' का अर्थ '+', '×' का अर्थ '−' और '+' का अर्थ '÷' है, तो निम्नलिखित समीकरण में प्रश्नवाचक चिन्ह (?) के स्थान पर क्या आएगा?\n288 − 2 ++ 80 × 5 ÷ ÷ 14 = ?",
+      "options_en": [
+        "45",
+        "25",
+        "52",
+        "54"
+      ],
+      "options_hi": [
+        "45",
+        "25",
+        "52",
+        "54"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 42,
+      "question_en": "A statement is followed by four conclusions. Find out which conclusion is true based on the given statement.\nStatement: Q = R > S ≤ T < U > V = Z\n\nConclusions:\n1. U > S\n2. Q < T\n3. S < V\n4. Z > U",
+      "question_hi": "एक कथन के बाद चार निष्कर्ष दिए गए हैं। दिए गए कथन के आधार पर सही निष्कर्ष ज्ञात कीजिए।\nकथन: Q = R > S ≤ T < U > V = Z\n\nनिष्कर्ष:\n1. U > S\n2. Q < T\n3. S < V\n4. Z > U",
+      "options_en": [
+        "1",
+        "2",
+        "4",
+        "3"
+      ],
+      "options_hi": [
+        "1",
+        "2",
+        "4",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 43,
+      "question_en": "Study the given diagram carefully. The numbers in different sections indicate the number of persons using different brands of laptops in an IT office.\n\nHow many people use both Sony and Dell laptops?",
+      "question_hi": "दिए गए चित्र का ध्यानपूर्वक अध्ययन करें। विभिन्न क्षेत्रों में दी गई संख्याएँ आईटी ऑफिस में विभिन्न ब्रांड के लैपटॉप उपयोग करने वाले व्यक्तियों की संख्या दर्शाती हैं।\n\nकितने लोग Sony और Dell दोनों लैपटॉप का उपयोग करते हैं?",
+      "question_img": "images/R-Q18.png",
+      "options_en": [
+        "6",
+        "16",
+        "20",
+        "10"
+      ],
+      "options_hi": [
+        "6",
+        "16",
+        "20",
+        "10"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 44,
+      "question_en": "Five students - 1, 2, 3, 4 and 5 - are sitting around a circular table facing the centre. 4 is sitting to the immediate right of 1. 5 is sitting to the immediate left of 2. 5 is sitting second to the left of 1. Which of the following statements is true?",
+      "question_hi": "पाँच विद्यार्थी - 1, 2, 3, 4 और 5 - केंद्र की ओर मुख करके गोल मेज के चारों ओर बैठे हैं। 4, 1 के तुरंत दाहिनी ओर बैठा है। 5, 2 के तुरंत बाईं ओर बैठा है। 5, 1 के बाईं ओर दूसरे स्थान पर बैठा है। निम्नलिखित में से कौन-सा कथन सही है?",
+      "options_en": [
+        "5 is sitting third to the right of 3.",
+        "1 is the immediate neighbour of 5.",
+        "2 is sitting between 4 and 1.",
+        "3 is sitting between 5 and 1."
+      ],
+      "options_hi": [
+        "5, 3 के दाईं ओर तीसरे स्थान पर बैठा है।",
+        "1, 5 का तुरंत पड़ोसी है।",
+        "2, 4 और 1 के बीच बैठा है।",
+        "3, 5 और 1 के बीच बैठा है।"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 45,
+      "question_en": "Pole E is to the north of pole U and east of pole R. Pole N is to the west of pole U and east of pole I. Pole J is to the south of pole I. What is the position of pole R with respect to pole U?",
+      "question_hi": "ध्रुव E, ध्रुव U के उत्तर में और ध्रुव R के पूर्व में है। ध्रुव N, ध्रुव U के पश्चिम में और ध्रुव I के पूर्व में है। ध्रुव J, ध्रुव I के दक्षिण में है। ध्रुव R का ध्रुव U के सापेक्ष स्थान क्या है?",
+      "options_en": [
+        "South",
+        "South-west",
+        "North",
+        "North-west"
+      ],
+      "options_hi": [
+        "दक्षिण",
+        "दक्षिण-पश्चिम",
+        "उत्तर",
+        "उत्तर-पश्चिम"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 46,
+      "question_en": "The following line graph shows the number of admissions of students (in thousands) in six different districts, A, B, C, D, E and F, in three consecutive years, 2014, 2015 and 2016. Study the graph and answer the question.\n\nWhat is the difference between the total number of admissions in district B for the given three years and the total number of admissions in district E for the first two consecutive years (2014 and 2015)?",
+      "question_hi": "निम्न रेखा ग्राफ छह विभिन्न जिलों A, B, C, D, E और F में छात्रों के प्रवेश (हजारों में) को तीन लगातार वर्षों 2014, 2015 और 2016 में दर्शाता है। ग्राफ का अध्ययन करें और प्रश्न का उत्तर दें।\n\nदी गई तीन वर्षों के लिए जिले B में कुल प्रवेश और पहले दो वर्षों (2014 और 2015) में जिले E के कुल प्रवेश के बीच का अंतर क्या है?",
+      "question_img": "images/R-Q21.png",
+      "options_en": [
+        "25",
+        "20",
+        "40",
+        "80"
+      ],
+      "options_hi": [
+        "25",
+        "20",
+        "40",
+        "80"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 47,
+      "question_en": "A, B, C, D, E, F and G want to play a video game they purchased together. Each will play it on one day of the same week starting from Monday and ending on Sunday. No one gets to play on the same day of the week. A will play on Sunday. D will play immediately before A. B will play immediately after E. E will play on Wednesday. C will not get it on Monday. F gets it on a day between B and D. On which day will G get to play?",
+      "question_hi": "A, B, C, D, E, F और G एक वीडियो गेम खेलना चाहते हैं जो उन्होंने साथ में खरीदा है। प्रत्येक व्यक्ति सप्ताह के किसी एक दिन खेलेगा, सोमवार से शुरू होकर रविवार तक। कोई भी एक ही दिन नहीं खेलेगा। A रविवार को खेलेगा। D ठीक A से पहले खेलेगा। B ठीक E के बाद खेलेगा। E बुधवार को खेलेगा। C सोमवार को नहीं खेलेगा। F B और D के बीच के किसी दिन खेलेगा। G किस दिन खेलेगा?",
+      "options_en": [
+        "Saturday",
+        "Friday",
+        "Thursday",
+        "Monday"
+      ],
+      "options_hi": [
+        "शनिवार",
+        "शुक्रवार",
+        "गुरुवार",
+        "सोमवार"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 48,
+      "question_en": "Find the approximate angle between the minute hand and the hour hand of a 12-hour clock when the time is 9:25.",
+      "question_hi": "जब समय 9:25 हो, तो 12-घंटे की घड़ी में मिनट की सुई और घंटे की सुई के बीच का लगभग कोण ज्ञात कीजिए।",
+      "options_en": [
+        "150 degrees",
+        "100 degrees",
+        "190 degrees",
+        "130 degrees"
+      ],
+      "options_hi": [
+        "150 डिग्री",
+        "100 डिग्री",
+        "190 डिग्री",
+        "130 डिग्री"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 49,
+      "question_en": "Five persons A, B, C, D, and E are sitting in a straight line. All are facing the north direction. D sits to the immediate left of A. Only two persons are sitting between D and B. C sits second from the extreme right end of the line. Only two persons are sitting between C and E. Who is sitting to the immediate right of E?",
+      "question_hi": "पाँच व्यक्ति A, B, C, D और E एक सीधी पंक्ति में बैठे हैं। सभी उत्तर दिशा की ओर मुख किए हुए हैं। D, A के तुरंत बाईं ओर बैठा है। D और B के बीच केवल दो व्यक्ति हैं। C पंक्ति के दाहिने छोर से दूसरे स्थान पर बैठा है। C और E के बीच केवल दो व्यक्ति हैं। E के तुरंत दाहिनी ओर कौन बैठा है?",
+      "options_en": [
+        "B",
+        "A",
+        "D",
+        "C"
+      ],
+      "options_hi": [
+        "B",
+        "A",
+        "D",
+        "C"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 50,
+      "question_en": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number.\n13:96 :: 18:131 :: 14: ?",
+      "question_hi": "उस विकल्प का चयन करें जो पाँचवें संख्या से उसी प्रकार संबंधित है जैसे दूसरी संख्या पहली संख्या से और चौथी संख्या तीसरी संख्या से संबंधित है।\n13:96 :: 18:131 :: 14: ?",
+      "options_en": [
+        "100",
+        "104",
+        "103",
+        "102"
+      ],
+      "options_hi": [
+        "100",
+        "104",
+        "103",
+        "102"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 51,
+      "question_en": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number.\n12:96 :: 18:144 :: 14: ?",
+      "question_hi": "उस विकल्प का चयन करें जो पाँचवीं संख्या से उसी प्रकार संबंधित है जैसे दूसरी संख्या पहली संख्या से और चौथी संख्या तीसरी संख्या से संबंधित है।\n12:96 :: 18:144 :: 14: ?",
+      "options_en": [
+        "110",
+        "114",
+        "112",
+        "111"
+      ],
+      "options_hi": [
+        "110",
+        "114",
+        "112",
+        "111"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 52,
+      "question_en": "What will come in the place of the question mark (?) in the following equation if '÷' and '×' are interchanged and also '+' and '−' are interchanged?\n12 − 104 × 8 + 5 ÷ 4 = ?",
+      "question_hi": "यदि '÷' और '×' को स्थानांतरित किया जाए और '+' और '−' को भी स्थानांतरित किया जाए, तो निम्नलिखित समीकरण में प्रश्नवाचक चिन्ह (?) के स्थान पर क्या आएगा?\n12 − 104 × 8 + 5 ÷ 4 = ?",
+      "options_en": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "options_hi": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 53,
+      "question_en": "Study the given diagram carefully. How many people rely on both Solar energy and Coal energy?",
+      "question_hi": "दिए गए चित्र का ध्यानपूर्वक अध्ययन करें। कितने लोग दोनों Solar ऊर्जा और Coal ऊर्जा पर निर्भर हैं?",
+      "options_en": [
+        "28",
+        "77",
+        "40",
+        "12"
+      ],
+      "options_hi": [
+        "28",
+        "77",
+        "40",
+        "12"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 54,
+      "question_en": "In a queue of boys, there are exactly 8 boys standing between Suraj and Bheem. Suraj is 21st from the front, while Bheem is at the first position from the back. How many total boys are there in the queue?",
+      "question_hi": "लड़कों की कतार में, Suraj और Bheem के बीच ठीक 8 लड़के खड़े हैं। Suraj सामने से 21वें स्थान पर है, जबकि Bheem पीछे से पहले स्थान पर है। कतार में कुल कितने लड़के हैं?",
+      "options_en": [
+        "30",
+        "32",
+        "31",
+        "29"
+      ],
+      "options_hi": [
+        "30",
+        "32",
+        "31",
+        "29"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 55,
+      "question_en": "In a class of 11 students, each scored differently. V's rank from the bottom is 6th, while D's rank from the top is 4th. T's rank from the top is exactly between the ranks of V and D. What is T's rank from the bottom?",
+      "question_hi": "11 छात्रों की कक्षा में, प्रत्येक ने अलग-अलग अंक प्राप्त किए। V का स्थान नीचे से 6वाँ है, जबकि D का स्थान ऊपर से 4वाँ है। T का स्थान ऊपर से V और D के स्थानों के ठीक बीच में है। T का स्थान नीचे से क्या है?",
+      "options_en": [
+        "5th",
+        "7th",
+        "8th",
+        "9th"
+      ],
+      "options_hi": [
+        "5वाँ",
+        "7वाँ",
+        "8वाँ",
+        "9वाँ"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 56,
+      "question_en": "The Right to Education in the Indian Constitution was added by introducing a new Article, __, in the Chapter on Fundamental Rights in 2002 by the 86th Constitutional Amendment.",
+      "question_hi": "भारतीय संविधान में शिक्षा का अधिकार 2002 में 86वें संविधान संशोधन के माध्यम से मूल अधिकारों के अध्याय में एक नए अनुच्छेद __ को शामिल करके जोड़ा गया।",
+      "options_en": [
+        "21A",
+        "23A",
+        "19A",
+        "25A"
+      ],
+      "options_hi": [
+        "21A",
+        "23A",
+        "19A",
+        "25A"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 57,
+      "question_en": "According to the Jal Jeevan Mission, what is the percentage target for rural households to receive tap water by 2025?",
+      "question_hi": "जल जीवन मिशन के अनुसार, 2025 तक ग्रामीण परिवारों को नल का पानी उपलब्ध कराने का लक्ष्य प्रतिशत क्या है?",
+      "options_en": [
+        "100%",
+        "90%",
+        "80%",
+        "75%"
+      ],
+      "options_hi": [
+        "100%",
+        "90%",
+        "80%",
+        "75%"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 58,
+      "question_en": "Who is remembered as 'Deshbandhu', who served as the President of the Indian National Congress for one session in 1922 and co-founded the Swaraj Party with Motilal Nehru?",
+      "question_hi": "'देशबंधु' के रूप में किसे याद किया जाता है, जिन्होंने 1922 में भारतीय राष्ट्रीय कांग्रेस के अध्यक्ष के रूप में एक सत्र के लिए सेवा दी और मोतीलाल नेहरू के साथ स्वराज पार्टी की सह-स्थापना की?",
+      "options_en": [
+        "Aurobindo Ghosh",
+        "Lala Lajpat Rai",
+        "Chittaranjan Das",
+        "Gopal Krishna Gokhale"
+      ],
+      "options_hi": [
+        "अरविंदो घोष",
+        "लाला लाजपत राय",
+        "चित्तरंजन दास",
+        "गोपाल कृष्ण गोखले"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 59,
+      "question_en": "Marathi, which is an Indo-Aryan language, is the __ largest language spoken by 6.86% of the total population of India according to the 2011 census.",
+      "question_hi": "मराठी, जो एक इंडो-आर्यन भाषा है, 2011 की जनगणना के अनुसार भारत की कुल आबादी का 6.86% बोलने वाली __ सबसे बड़ी भाषा है।",
+      "options_en": [
+        "Fifth",
+        "Fourth",
+        "Second",
+        "Third"
+      ],
+      "options_hi": [
+        "पाँचवीं",
+        "चौथी",
+        "दूसरी",
+        "तीसरी"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 60,
+      "question_en": "The 'Kangra' and 'Kullu' valley is situated in which state of India?",
+      "question_hi": "'कांगड़ा' और 'कुल्लू' घाटी भारत के किस राज्य में स्थित है?",
+      "options_en": [
+        "Uttarakhand",
+        "Sikkim",
+        "Arunachal Pradesh",
+        "Himachal Pradesh"
+      ],
+      "options_hi": [
+        "उत्तराखंड",
+        "सिक्किम",
+        "अरुणाचल प्रदेश",
+        "हिमाचल प्रदेश"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 61,
+      "question_en": "Which state is famous for celebrating the Pongal festival?",
+      "question_hi": "पोंगल त्योहार मनाने के लिए कौन सा राज्य प्रसिद्ध है?",
+      "options_en": [
+        "Tamil Nadu",
+        "Odisha",
+        "Telangana",
+        "Tripura"
+      ],
+      "options_hi": [
+        "तमिल नाडु",
+        "ओडिशा",
+        "तेलंगाना",
+        "त्रिपुरा"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 62,
+      "question_en": "The Sarpanch or the president of the Gram Panchayat is elected by the ward members as per the State Act for a period of __ years.",
+      "question_hi": "ग्राम पंचायत का सरपंच या अध्यक्ष, राज्य अधिनियम के अनुसार, वार्ड सदस्यों द्वारा कितने वर्षों की अवधि के लिए चुना जाता है?",
+      "options_en": [
+        "2",
+        "5",
+        "3",
+        "1"
+      ],
+      "options_hi": [
+        "2",
+        "5",
+        "3",
+        "1"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 63,
+      "question_en": "What is the NISAR satellite, launched in February 2025 and co-developed by ISRO and NASA, designed for?",
+      "question_hi": "NISAR उपग्रह, जिसे फरवरी 2025 में लॉन्च किया गया और ISRO तथा NASA द्वारा सह-विकसित किया गया, किसके लिए डिजाइन किया गया है?",
+      "options_en": [
+        "Earth",
+        "Moon",
+        "Mars",
+        "Jupiter"
+      ],
+      "options_hi": [
+        "पृथ्वी",
+        "चंद्रमा",
+        "मंगल",
+        "बृहस्पति"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 64,
+      "question_en": "The 'Garo', 'Khasi' and 'Jaintia' hills are part of which physical division of India?",
+      "question_hi": "'गारो', 'खासी' और 'जैन्टिया' पहाड़ियाँ भारत के किस भौतिक क्षेत्र का हिस्सा हैं?",
+      "options_en": [
+        "The Coastal Plains",
+        "The Peninsular Plateau",
+        "The Himalayan Mountain",
+        "The Northern Plains"
+      ],
+      "options_hi": [
+        "तटीय मैदान",
+        "द्वीपीय पठार",
+        "हिमालय पर्वत",
+        "उत्तरी मैदान"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 65,
+      "question_en": "What is another term for 'pedology'?",
+      "question_hi": "'पेडोलॉजी' के लिए दूसरा शब्द क्या है?",
+      "options_en": [
+        "Oceanography",
+        "Geomorphology",
+        "Phyto Geography",
+        "Soil Geography"
+      ],
+      "options_hi": [
+        "समुद्र विज्ञान",
+        "भूआकृति विज्ञान",
+        "वनस्पति भूगोल",
+        "मृदा भूगोल"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 66,
+      "question_en": "Who among the following is in charge of the Union Territories in the absence of the Chief Minister?",
+      "question_hi": "मुख्यमंत्री की अनुपस्थिति में, निम्नलिखित में से कौन केंद्र शासित प्रदेशों का प्रभार संभालता है?",
+      "options_en": [
+        "Lieutenant Governor",
+        "President",
+        "Chief Justice of India",
+        "Prime Minister"
+      ],
+      "options_hi": [
+        "लेफ्टिनेंट गवर्नर",
+        "राष्ट्रपति",
+        "भारत के मुख्य न्यायाधीश",
+        "प्रधानमंत्री"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 67,
+      "question_en": "Which Indian state became the first to establish a Senior Citizens Commission in March 2025?",
+      "question_hi": "मार्च 2025 में सीनियर सिटिजन कमिशन स्थापित करने वाला पहला भारतीय राज्य कौन सा बना?",
+      "options_en": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Goa"
+      ],
+      "options_hi": [
+        "केरल",
+        "तमिल नाडु",
+        "आंध्र प्रदेश",
+        "गोवा"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 68,
+      "question_en": "Who won the 2025 Asian Snooker Championship men's title?",
+      "question_hi": "2025 एशियन स्नूकर चैम्पियनशिप पुरुष खिताब किसने जीता?",
+      "options_en": [
+        "Pankaj Advani",
+        "Lewis Hamilton",
+        "Subhansu Das",
+        "Meena Tiwari"
+      ],
+      "options_hi": [
+        "पंकज अदवानी",
+        "लुईस हैमिल्टन",
+        "सुभान्सु दास",
+        "मीना तिवारी"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 69,
+      "question_en": "Securities sold by the Central Bank with a clear specification of repurchase date and price is called __.",
+      "question_hi": "केंद्रीय बैंक द्वारा जिन प्रतिभूतियों को पुनर्खरीद की तारीख और मूल्य के स्पष्ट निर्दिष्टीकरण के साथ बेचा जाता है, उसे __ कहा जाता है।",
+      "options_en": [
+        "outright open market operations",
+        "reverse repo",
+        "repurchase agreement",
+        "Interest Rate Swap"
+      ],
+      "options_hi": [
+        "आउटराइट ओपन मार्केट ऑपरेशन्स",
+        "रिवर्स रेपो",
+        "रिपर्चेस एग्रीमेंट",
+        "इंटरेस्ट रेट स्वैप"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 70,
+      "question_en": "Which bank of India has launched a verified WhatsApp channel for Financial Updates by 2025?",
+      "question_hi": "2025 तक वित्तीय अपडेट्स के लिए किस भारतीय बैंक ने सत्यापित व्हाट्सएप चैनल लॉन्च किया है?",
+      "options_en": [
+        "Reserve Bank of India",
+        "Bank of Maharashtra",
+        "Axis Bank",
+        "PNB Bank"
+      ],
+      "options_hi": [
+        "भारतीय रिजर्व बैंक",
+        "महाराष्ट्र बैंक",
+        "एक्सिस बैंक",
+        "पीएनबी बैंक"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 71,
+      "question_en": "Uzgeiling Gompa is found in the Indian state of __.",
+      "question_hi": "उज्गेइलिंग गोम्पा भारत के किस राज्य में स्थित है?",
+      "options_en": [
+        "Uttarakhand",
+        "Sikkim",
+        "Arunachal Pradesh",
+        "Himachal Pradesh"
+      ],
+      "options_hi": [
+        "उत्तराखंड",
+        "सिक्किम",
+        "अरुणाचल प्रदेश",
+        "हिमाचल प्रदेश"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 72,
+      "question_en": "Which of the following apps has been launched to make the Indian Parliament proceedings accessible to the public at large?",
+      "question_hi": "निम्नलिखित में से कौन सा ऐप भारतीय संसद की कार्यवाही को आम जनता के लिए सुलभ बनाने के लिए लॉन्च किया गया है?",
+      "options_en": [
+        "Sansad Yojana",
+        "Sansad Dekho Live",
+        "Digital Sansad",
+        "Online Sansad Karyawahi"
+      ],
+      "options_hi": [
+        "संसद योजना",
+        "संसद देखो लाइव",
+        "डिजिटल संसद",
+        "ऑनलाइन संसद कार्यवाही"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 73,
+      "question_en": "Which of the following longitudes is considered the International Date Line?",
+      "question_hi": "निम्नलिखित में से कौन-सी देशांतर रेखा को अंतरराष्ट्रीय तारीख रेखा माना जाता है?",
+      "options_en": [
+        "90° E",
+        "0°",
+        "90° W",
+        "180°"
+      ],
+      "options_hi": [
+        "90° पूर्व",
+        "0°",
+        "90° पश्चिम",
+        "180°"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 74,
+      "question_en": "Where was India's most powerful supercomputer Param Pravega launched?",
+      "question_hi": "भारत का सबसे शक्तिशाली सुपरकंप्यूटर परम प्रवेग कहाँ लॉन्च किया गया?",
+      "options_en": [
+        "IIT Roorkee",
+        "IISC Bengaluru",
+        "IIT Gandhinagar",
+        "IIT Ropar"
+      ],
+      "options_hi": [
+        "आईआईटी रुड़की",
+        "आईआईएससी बेंगलुरु",
+        "आईआईटी गांधीनगर",
+        "आईआईटी रोपड़"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 75,
+      "question_en": "Who is the President of the Indian Olympic Association by 2025?",
+      "question_hi": "2025 तक भारतीय ओलंपिक संघ के अध्यक्ष कौन हैं?",
+      "options_en": [
+        "PT Usha",
+        "Abhay Singh Chautala",
+        "Narinder Dhruv Batra",
+        "N Ramachandran"
+      ],
+      "options_hi": [
+        "पीटी उषा",
+        "अभय सिंह चौटाला",
+        "नरिंदर ध्रुव बत्रा",
+        "एन. रामचंद्रन"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 76,
+      "question_en": "The resistance of a wire is doubled when:",
+      "question_hi": "जब किसी तार की प्रतिरोध द्विगुणित हो जाती है तो:",
+      "options_en": [
+        "Length is halved, area doubled",
+        "Length doubled, area halved",
+        "Length doubled, area doubled",
+        "Length halved, area halved"
+      ],
+      "options_hi": [
+        "लंबाई आधी और क्षेत्रफल दुगना",
+        "लंबाई दुगनी और क्षेत्रफल आधा",
+        "लंबाई दुगनी और क्षेत्रफल दुगना",
+        "लंबाई आधी और क्षेत्रफल आधा"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 77,
+      "question_en": "Which law states that current is directly proportional to voltage at constant temperature?",
+      "question_hi": "कौन सा नियम कहता है कि निश्चित तापमान पर धारा वोल्टेज के सीधे अनुपाती होती है?",
+      "options_en": [
+        "Coulomb’s law",
+        "Faraday’s law",
+        "Ohm’s law",
+        "Ampere’s law"
+      ],
+      "options_hi": [
+        "कुलॉम्ब का नियम",
+        "फैराडे का नियम",
+        "ओम का नियम",
+        "एम्पियर का नियम"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 78,
+      "question_en": "The energy required to increase unit mass of liquid into vapor without change in temperature is called:",
+      "question_hi": "तापमान में बदलाव के बिना किसी द्रव के एकक द्रव्यमान को वाष्प में बदलने के लिए आवश्यक ऊर्जा को क्या कहा जाता है?",
+      "options_en": [
+        "Latent heat of fusion",
+        "Latent heat of vaporization",
+        "Specific heat",
+        "Heat capacity"
+      ],
+      "options_hi": [
+        "संलयन गुप्त ऊष्मा",
+        "वाष्पीकरण गुप्त ऊष्मा",
+        "विशिष्ट ऊष्मा",
+        "ऊष्मा क्षमता"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 79,
+      "question_en": "The sky appears blue due to:",
+      "question_hi": "आकाश नीला क्यों दिखाई देता है?",
+      "options_en": [
+        "Reflection",
+        "Refraction",
+        "Scattering",
+        "Diffraction"
+      ],
+      "options_hi": [
+        "परावर्तन",
+        "अपवर्तन",
+        "विक्षेपण",
+        "विकिरण"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 80,
+      "question_en": "Which color of light has the maximum wavelength?",
+      "question_hi": "कौन सा प्रकाश रंग सबसे अधिक तरंगदैर्ध्य वाला होता है?",
+      "options_en": [
+        "Violet",
+        "Yellow",
+        "Green",
+        "Red"
+      ],
+      "options_hi": [
+        "बैंगनी",
+        "पीला",
+        "हरा",
+        "लाल"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 81,
+      "question_en": "Which physical quantity is measured in 'Pascal'?",
+      "question_hi": "कौन सा भौतिक परिमाण 'पास्कल' में मापा जाता है?",
+      "options_en": [
+        "Pressure",
+        "Work",
+        "Energy",
+        "Power"
+      ],
+      "options_hi": [
+        "दबाव",
+        "कार्य",
+        "ऊर्जा",
+        "शक्ति"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 82,
+      "question_en": "Escape velocity on Earth is nearly:",
+      "question_hi": "पृथ्वी पर पलायन वेग लगभग है:",
+      "options_en": [
+        "7.9 km/s",
+        "8.9 km/s",
+        "9.8 km/s",
+        "11.2 km/s"
+      ],
+      "options_hi": [
+        "7.9 किमी/से",
+        "8.9 किमी/से",
+        "9.8 किमी/से",
+        "11.2 किमी/से"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 83,
+      "question_en": "Transformer works on the principle of:",
+      "question_hi": "ट्रांसफॉर्मर किस सिद्धांत पर कार्य करता है?",
+      "options_en": [
+        "Electrolysis",
+        "Mutual induction",
+        "Photoelectric effect",
+        "Resonance"
+      ],
+      "options_hi": [
+        "विद्युत विघटन",
+        "आपसी प्रेरण",
+        "फोटोइलेक्ट्रिक प्रभाव",
+        "अनुनाद"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 84,
+      "question_en": "Which of the following is a noble gas?",
+      "question_hi": "निम्नलिखित में से कौन सा नोबल गैस है?",
+      "options_en": [
+        "Oxygen",
+        "Helium",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "options_hi": [
+        "ऑक्सीजन",
+        "हीलियम",
+        "नाइट्रोजन",
+        "हाइड्रोजन"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 85,
+      "question_en": "Atomic number of carbon is:",
+      "question_hi": "कार्बन का परमाणु क्रमांक है:",
+      "options_en": [
+        "6",
+        "8",
+        "12",
+        "16"
+      ],
+      "options_hi": [
+        "6",
+        "8",
+        "12",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 86,
+      "question_en": "Which gas is produced when zinc reacts with dilute HCl?",
+      "question_hi": "जब जिंक पतली HCl के साथ प्रतिक्रिया करता है तो कौन सी गैस उत्पन्न होती है?",
+      "options_en": [
+        "O₂",
+        "CO₂",
+        "H₂",
+        "N₂"
+      ],
+      "options_hi": [
+        "O₂",
+        "CO₂",
+        "H₂",
+        "N₂"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 87,
+      "question_en": "pH of neutral solution at 25°C is:",
+      "question_hi": "25°C पर तटस्थ घोल का pH क्या होता है?",
+      "options_en": [
+        "5",
+        "7",
+        "9",
+        "14"
+      ],
+      "options_hi": [
+        "5",
+        "7",
+        "9",
+        "14"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 88,
+      "question_en": "The process of coating zinc on iron to prevent rusting is called:",
+      "question_hi": "लोहे पर जिंक की परत चढ़ाने की प्रक्रिया, ताकि जंग से बचाया जा सके, क्या कहलाती है?",
+      "options_en": [
+        "Alloying",
+        "Galvanization",
+        "Electroplating",
+        "Refining"
+      ],
+      "options_hi": [
+        "अलॉयिंग",
+        "गैल्वनाइजेशन",
+        "इलेक्ट्रोप्लेटिंग",
+        "शोधन"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 89,
+      "question_en": "The substance which increases the rate of reaction without being consumed is called:",
+      "question_hi": "वह पदार्थ जो प्रतिक्रिया की दर बढ़ाता है बिना खुद खपत हुए, क्या कहलाता है?",
+      "options_en": [
+        "Catalyst",
+        "Solvent",
+        "Inhibitor",
+        "Reagent"
+      ],
+      "options_hi": [
+        "उत्तेजक (कैटलिस्ट)",
+        "घुलक",
+        "प्रतिबंधक",
+        "प्रतिक्रिया द्रव्य"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 90,
+      "question_en": "Which allotrope of carbon is a good conductor of electricity?",
+      "question_hi": "कार्बन का कौन सा रूप विद्युत का अच्छा चालक है?",
+      "options_en": [
+        "Diamond",
+        "Graphite",
+        "Coal",
+        "Charcoal"
+      ],
+      "options_hi": [
+        "हीरा",
+        "ग्रेफाइट",
+        "कोयला",
+        "चारकोल"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 91,
+      "question_en": "Which chemical is known as 'washing soda'?",
+      "question_hi": "'वाशिंग सोडा' के रूप में कौन सा रासायनिक जाना जाता है?",
+      "options_en": [
+        "Na₂CO₃·10H₂O",
+        "NaHCO₃",
+        "K₂CO₃",
+        "CaCO₃"
+      ],
+      "options_hi": [
+        "Na₂CO₃·10H₂O",
+        "NaHCO₃",
+        "K₂CO₃",
+        "CaCO₃"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 92,
+      "question_en": "Insulin is secreted by which organ?",
+      "question_hi": "इंसुलिन किस अंग द्वारा स्रावित किया जाता है?",
+      "options_en": [
+        "Liver",
+        "Kidney",
+        "Pancreas",
+        "Thyroid"
+      ],
+      "options_hi": [
+        "यकृत",
+        "गुर्दा",
+        "अग्न्याशय",
+        "थायरॉयड"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 93,
+      "question_en": "Which blood group is called 'universal donor'?",
+      "question_hi": "कौन सा रक्त समूह 'यूनिवर्सल डोनर' कहलाता है?",
+      "options_en": [
+        "A",
+        "B",
+        "AB",
+        "O"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "AB",
+        "O"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 94,
+      "question_en": "Which part of human brain controls breathing and heartbeat?",
+      "question_hi": "मानव मस्तिष्क का कौन सा भाग श्वास और हृदय गति को नियंत्रित करता है?",
+      "options_en": [
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla oblongata",
+        "Pons"
+      ],
+      "options_hi": [
+        "सिरेब्रम",
+        "सिरेबेलम",
+        "मेडुला ऑब्लॉन्गाटा",
+        "पॉन्स"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 95,
+      "question_en": "The green revolution in India is mainly related to:",
+      "question_hi": "भारत में हरित क्रांति मुख्य रूप से किससे संबंधित है?",
+      "options_en": [
+        "Dairy farming",
+        "Fish culture",
+        "Food grain production",
+        "Poultry farming"
+      ],
+      "options_hi": [
+        "डेयरी फार्मिंग",
+        "मछली पालन",
+        "अनाज उत्पादन",
+        "पोल्ट्री फार्मिंग"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 96,
+      "question_en": "Which vitamin helps in blood clotting?",
+      "question_hi": "कौन सा विटामिन रक्त के थक्के बनाने में मदद करता है?",
+      "options_en": [
+        "Vitamin A",
+        "Vitamin D",
+        "Vitamin E",
+        "Vitamin K"
+      ],
+      "options_hi": [
+        "विटामिन A",
+        "विटामिन D",
+        "विटामिन E",
+        "विटामिन K"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 97,
+      "question_en": "The powerhouse of the cell is:",
+      "question_hi": "कोशिका का ऊर्जा केंद्र कौन सा है?",
+      "options_en": [
+        "Nucleus",
+        "Mitochondria",
+        "Chloroplast",
+        "Ribosome"
+      ],
+      "options_hi": [
+        "नाभिक",
+        "माइटोकॉन्ड्रिया",
+        "क्लोरोप्लास्ट",
+        "राइबोसोम"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 98,
+      "question_en": "The vector of malaria is:",
+      "question_hi": "मलेरिया का वाहक कौन है?",
+      "options_en": [
+        "Aedes mosquito",
+        "Anopheles mosquito",
+        "Culex mosquito",
+        "Housefly"
+      ],
+      "options_hi": [
+        "एडीज मच्छर",
+        "एनोफिल्स मच्छर",
+        "कुलेक्स मच्छर",
+        "मक्खी"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 99,
+      "question_en": "In human eye, the image is formed on:",
+      "question_hi": "मानव आंख में छवि किस पर बनती है?",
+      "options_en": [
+        "Cornea",
+        "Retina",
+        "Lens",
+        "Iris"
+      ],
+      "options_hi": [
+        "कॉर्निया",
+        "रेटिना",
+        "लेंस",
+        "आयरिस"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 100,
+      "question_en": "DNA fingerprinting technique was developed by:",
+      "question_hi": "डीएनए फिंगरप्रिंटिंग तकनीक किसने विकसित की?",
+      "options_en": [
+        "Watson & Crick",
+        "Gregor Mendel",
+        "Alec Jeffreys",
+        "Hargobind Khorana"
+      ],
+      "options_hi": [
+        "वाटसन और क्रिक",
+        "ग्रेगर मेंडल",
+        "एलेक जेफ्रीज़",
+        "हरगोबिंद खुराना"
+      ],
+      "answer": 2
+    }
+  ]
+}
