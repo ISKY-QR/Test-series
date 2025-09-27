@@ -4,7 +4,7 @@ let questions = [];
 let answers = {};
 let currentIndex = 0;
 let timer;
-let timeLeft = 600; // 10 mins for 10 questions
+let timeLeft = 5400; // 10 mins for 10 questions
 let language = "en"; // default language
 let currentScreen = "start";
 
