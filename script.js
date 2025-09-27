@@ -24,7 +24,7 @@ if (!coachingCenter) {
   coachingCenter = pathParts[pathParts.length - 1];
 }
 if (!coachingCenter || coachingCenter.endsWith(".html")) {
-  coachingCenter = "the-scholar"; // default fallback
+  coachingCenter = "top-rankers"; // default fallback
 }
 
 // Fetch questions
