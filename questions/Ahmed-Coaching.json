@@ -525,21 +525,22 @@
     },
     {
       "id": 30,
-      "question_en": "Find the odd one out: 121, 144, 169, 196, 225, 256, 281",
-      "question_hi": "असमान चुनें: 121, 144, 169, 196, 225, 256, 281",
+      "question_en": "Select the missing number from the given options.",
+      "question_hi": "दिए गए विकल्पों में से लुप्त संख्या चुनें।",
+      "question_img": "images/Q_25R.jpeg",
       "options_en": [
-        "169",
-        "225",
-        "256",
-        "281"
+        "10",
+        "13",
+        "9",
+        "14"
       ],
       "options_hi": [
-        "169",
-        "225",
-        "256",
-        "281"
+        "10",
+        "13",
+        "9",
+        "14"
       ],
-      "answer": 4
+      "answer": 0
     },
     {
       "id": 31,
@@ -669,21 +670,22 @@
     },
     {
       "id": 38,
-      "question_en": "If 'ORANGE' is coded as 'BIPMTQ', how is 'BANANA' coded?",
-      "question_hi": "यदि 'ORANGE' को 'BIPMTQ' के रूप में कोडित किया जाता है, तो 'BANANA' को कैसे कोडित किया जाएगा?",
+      "question_en": "What is next one?",
+      "question_hi": "अगला कौन सा है?",
+      "question_img": "images/Q_29R.jpeg",
       "options_en": [
-        "OPQOPQ",
-        "ZBMZMB",
-        "ABABAB",
-        "XYXYXY"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
       "options_hi": [
-        "OPQOPQ",
-        "ZBMZMB",
-        "ABABAB",
-        "XYXYXY"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "id": 39,
@@ -1441,5 +1443,6 @@
       ],
       "answer": 1
     }
+   
   ]
 }
